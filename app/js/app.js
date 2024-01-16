@@ -23,7 +23,7 @@ $(function () {
   $(".header__search").on("click", function () {
     $(".search-menu").addClass("open");
     $("body").addClass("lock");
-    $(".menu").removeClass("open");+
+    $(".menu").removeClass("open"); +
     $(".header__btn").removeClass("active-btn");
 
   });
@@ -40,14 +40,11 @@ $(function () {
       $(".menu").addClass("open");
     });
 
-    $('.active-btn').click(function() {
+    $('.active-btn').on("click", function () {
       $('.search-menu, .menu').removeClass('open');
-  });
+    });
 
   }
-
-
-
 
   /* start tabs on desktop accordion on mobile*/
   tabControl();
@@ -87,6 +84,13 @@ $(function () {
     }
   }
   /* end tabs on desktop accordion on mobile*/
+
+  $(".type").select2({
+    placeholder: "Сортування",
+    minimumResultsForSearch: -1
+  });
+
+
 });
 
 //header
