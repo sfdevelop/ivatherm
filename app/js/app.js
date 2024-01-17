@@ -283,7 +283,7 @@ var swiper = new Swiper(".quality-slider1", {
   slidesPerView: 5,
   freeMode: true,
   watchSlidesProgress: true,
-  
+
 });
 var swiper2 = new Swiper(".quality-slider2", {
   effect: "fade",
@@ -296,5 +296,42 @@ var swiper2 = new Swiper(".quality-slider2", {
   thumbs: {
     swiper: swiper,
   },
-  
+});
+
+
+
+var mySwiper = new Swiper(".swiper-progres", {
+  autoHeight: true,
+  // autoplay: {
+  //   delay: 5000,
+  //   disableOnInteraction: false
+  // },
+  speed: 500,
+  direction: "horizontal",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  pagination: {
+    el: ".swiper-pagination1",
+    type: "progressbar"
+  },
+  loop: false,
+  effect: "slide",
+  spaceBetween: 30,
+  on: {
+    init: function () {
+      $(".swiper-pagination-custom1 .swiper-pagination-switch1").removeClass("active");
+      $(".swiper-pagination-custom1 .swiper-pagination-switch1").eq(0).addClass("active");
+    },
+    slideChangeTransitionStart: function () {
+      $(".swiper-pagination-custom1 .swiper-pagination-switch1").removeClass("active");
+      $(".swiper-pagination-custom1 .swiper-pagination-switch1").eq(mySwiper.realIndex).addClass("active");
+    }
+  }
+});
+$(".swiper-pagination-custom1 .swiper-pagination-switch1").click(function () {
+  mySwiper.slideTo($(this).index());
+  $(".swiper-pagination-custom1 .swiper-pagination-switch1").removeClass("active");
+  $(this).addClass("active");
 });
