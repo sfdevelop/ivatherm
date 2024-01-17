@@ -118,12 +118,14 @@ body.lock {
   font-weight: 500;
   line-height: normal;
 }
-h4.title{
+
+h4.title {
   color: #1B1B1B;
   font-size: 40px;
   font-weight: 500;
   line-height: normal;
 }
+
 /*start breadcrumbs=========*/
 .breadcrumbs {
   margin: 15px 0 0 0;
@@ -172,6 +174,34 @@ h4.title{
 
       &:last-child {
         color: #868E96;
+      }
+    }
+  }
+
+  &--white {
+    .breadcrumbs__list {
+      li {
+
+        color: #fff;
+
+        &+li {
+
+          &::before {
+            color: #fff;
+          }
+        }
+
+        &:last-child {
+
+          span {
+            color: #fff;
+          }
+        }
+
+        &:last-child {
+          color: #fff;
+          font-weight: 300;
+        }
       }
     }
   }
