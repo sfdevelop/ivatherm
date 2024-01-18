@@ -99,6 +99,17 @@ $(function () {
     minimumResultsForSearch: -1
   });
 
+  $(".city").select2({
+    // placeholder: "Сортування",
+    minimumResultsForSearch: -1
+  });
+
+  $(".num").select2({
+    // placeholder: "Сортування",
+    minimumResultsForSearch: -1
+  });
+
+  
 
   $('.history__item-one').hover(
     function () {
