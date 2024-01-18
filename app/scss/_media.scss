@@ -329,10 +329,26 @@
 
     p {
       text-align: center;
-      line-height: 20px; 
+      line-height: 20px;
     }
   }
 
+  .basket-info img {
+    margin: 60px auto 20px auto;
+  }
+
+  .basket-info .title {
+    font-size: 29px;
+    margin: 0 0 25px 0;
+  }
+
+  .basket-slider .title {
+    font-size: 29px;
+  }
+
+  .basket-info {
+    padding: 0 0 30px;
+  }
 }
 
 @media (max-width: 767px) {
