@@ -292,3 +292,73 @@ h4.title {
     background-color: #8D89DA;
   }
 }
+
+/*start pagination===========*/
+.pagination {
+  margin: 30px 0 0 0;
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  li {
+
+    &+li {
+      margin-left: 20px;
+    }
+  }
+
+  a,
+  span {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+    color: #282D3C;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+
+    &.active {
+      color: #8D89DA;
+    }
+  }
+
+  a:hover {
+    border-color: #343C66;
+    color: #343C66;
+  }
+
+  &__last {
+    opacity: .9;
+    pointer-events: none;
+
+    svg path {
+      fill: #fff;
+    }
+  }
+
+  &__btn-prev,
+  &__btn-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50% !important;
+    background-color: #8D89DA !important;
+  }
+  &__btn-prev.end,
+  &__btn-next.end {
+    opacity: .6;
+  }
+  &__btn-prev {
+    transform: rotate(180deg);
+  }
+}
+
+/*end pagination===========*/

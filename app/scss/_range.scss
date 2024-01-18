@@ -1,0 +1,51 @@
+.range{
+  margin: 25px 0 20px 0;
+  padding: 0 0 20px 0;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+  color: #8D89DA;
+  padding: 5px 10px;
+  border-radius: 100px;
+  background-color: #F4F3FB;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+  cursor: pointer;
+}
+
+.irs--flat .irs-bar {
+  top: 35px;
+  height: 2px;
+  background-color: #8D89DA;
+}
+
+.irs--flat .irs-line {
+  top: 35px;
+  height: 2px;
+  background-color: #F4F3FB;
+  border-radius: 4px;
+}
+
+.irs--flat .irs-from:before,
+.irs--flat .irs-to:before,
+.irs--flat .irs-single:before {
+  display: none;
+}
+
+
+.irs--flat .irs-handle>i:first-child {
+  position: absolute;
+  display: block;
+  top: 9px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: -1px;
+  background-color: #fff;
+  border: 2px solid #8D89DA;
+  cursor: pointer;
+}

@@ -43,8 +43,17 @@ $(function () {
     $('.active-btn').on("click", function () {
       $('.search-menu, .menu').removeClass('open');
     });
-
   }
+
+  $(".resalt-search__filter").on("click", function () {
+    $('.category-list').addClass('active');
+    $("body").addClass("lock");
+  });
+
+  $(".category-list__close").on("click", function () {
+    $('.category-list').removeClass('active');
+    $("body").removeClass("lock");
+  });
 
   /* start tabs on desktop accordion on mobile*/
   tabControl();
@@ -100,7 +109,13 @@ $(function () {
     }
   );
 
-
+  $(".js-range-slider").ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 5000,
+    from: 100,
+    postfix: "₴"
+  });
 });
 
 //header
