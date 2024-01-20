@@ -349,9 +349,158 @@
   .basket-info {
     padding: 0 0 30px;
   }
+
+  .blog-intro__inner h1 {
+    font-size: 35px;
+    margin: 0 0 25px 0;
+  }
+
+  .blog-intro__inner p {
+    margin: 0 0 45px 0;
+  }
+
+  .blog-list {
+    padding: 5px 0 70px 0;
+  }
+
+  .article h1 {
+    font-size: 35px;
+  }
+
+  .article {
+    padding: 25px 0 50px;
+  }
+
+  .article h1 {
+    margin: 0 auto 30px;
+  }
+
+  .article img {
+    margin: 0 0 55px 0;
+    height: 290px;
+    border-radius: 30px;
+
+  }
+
+  .article .container p+div {
+    margin: 25px 0 25px -10px;
+  }
+
+  .article .container p+div img {
+    margin: 0 0 0 10px;
+    border-radius: 15px;
+    width: calc(33.33333% - 10px);
+    height: 175px;
+  }
+
+  .article strong {
+    font-size: 20px;
+    margin: 65px 0 15px;
+  }
+
+  .blog-list--swiper .title {
+    margin: 0 0 30px 0;
+  }
+
+
+  .blog-list--swiper .container {
+    overflow-y: hidden;
+  }
+
+  .page-404 {
+    padding: 110px 0 55px;
+  }
+
+  .page-404 h5 {
+    margin: 0 0 25px 0;
+    font-size: 29px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .product .slider-card2 {
+    height: 335px;
+  }
+
+  .use__list li+li::after {
+    transform: translateX(-50%);
+  }
+
+  .product__left {
+    margin: 0 0 40px 0;
+  }
+
+  .swiper-components__box {
+    transform: translateY(-70%);
+  }
+
+  .reviews__inner {
+    flex-direction: column;
+  }
+
+  .reviews__left {
+    margin: 0 0 50px 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .reviews {
+    padding: 80px 0 70px;
+  }
+
+  .reviews__top .rateYo-four {
+    zoom: 1.5;
+  }
+
+  .reviews .title {
+    margin: 0 0 60px 0;
+  }
+
+  .reviews h6,
+  .reviews__send,
+  .form {
+    display: none;
+  }
+
+  .reviews__left-box {
+    margin: 0 0 10px 0;
+  }
+
+  .reviews__left {
+    margin: 0 0 25px 0;
+  }
+
+  .slider-reviews__left strong {
+    font-size: 20px;
+  }
+
+  .reviews__right--mob {
+    margin: 50px 0 0 0;
+    display: block;
+
+    .reviews__send {
+      display: flex;
+    }
+
+     h6,
+    .form {
+      display: block !important;
+    }
+  }
+
+
+
 }
 
 @media (max-width: 767px) {
+
+  .swiper-components .swiper-button-next,
+  .swiper-components .swiper-button-prev {
+    top: -50px;
+  }
+
   .margin-top {
     margin: 63px 0 0 0;
   }
@@ -940,6 +1089,121 @@
     padding: 0 20px 65px;
   }
 
+  .blog-list__inner li {
+    margin: 0 0 20px 30px;
+    width: calc(50% - 30px);
+  }
+
+  .contacts__inner {
+    flex-direction: column;
+  }
+
+  .contacts {
+    padding: 50px 0 20px;
+  }
+
+  .contacts__left {
+    margin: 0 0 40px 0;
+  }
+
+  .contacts__left li {
+    margin: 0 0 15px 0;
+  }
+
+  .contacts__left li img {
+    margin: 0 10px 0 0;
+  }
+
+  .product__inner {
+    flex-direction: column;
+  }
+
+  .option-list li {
+    margin: 0 0 10px -10px;
+    width: calc(100% - 10px);
+  }
+
+  .use__list {
+    flex-direction: column;
+  }
+
+  .use__list--xl {
+    margin: 0 0 0 -160px;
+  }
+
+  .use__list li {
+    position: relative;
+    margin: 0 0 95px 160px;
+    width: calc(100% - 160px);
+  }
+
+  .use__list li+li::after {
+    content: "";
+    position: absolute;
+    top: -75px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg) !important;
+  }
+
+  .product {
+    padding: 25px 0 20px;
+  }
+
+  .option-list {
+    padding: 20px 0 35px;
+  }
+
+  .use {
+    padding: 50px 0 0;
+  }
+
+  .use .title {
+    margin: 0 0 25px 0;
+  }
+
+  .use__list-img {
+    width: 72%;
+    margin: 0 auto 15px;
+  }
+
+  .components .title {
+    margin: 0 0 35px 0;
+  }
+
+  .slider-reviews__inner {
+    flex-direction: column;
+  }
+
+  .slider-reviews__left {
+    width: 100%;
+    margin: 0 0 20px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .slider-reviews__left strong {
+    margin: 0;
+  }
+
+  .slider-reviews__right .rateYo-four {
+    margin: 0 0 10px 0;
+  }
+
+  .reviews__right {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .slider-reviews__right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .slider-reviews {
+    padding-bottom: 100px;
+  }
+
 }
 
 @media (max-width: 575px) {
@@ -1264,6 +1528,9 @@
     right: -7px;
   }
 
+  .blog-list__inner li {
+    width: calc(100% - 30px);
+  }
 
 
 }
