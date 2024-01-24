@@ -194,6 +194,24 @@ $(function () {
   });
 
 
+  $(document).ready(function () {
+
+    // Або можна використовувати клас для вибору елементу за класом
+    var scrollContainer = $('.scroll__item-inner');
+
+    scrollContainer.on('mouseenter', function () {
+      // Використовуємо метод .off() для вимкнення події
+      swiper2.mousewheel.disable();
+    });
+
+    scrollContainer.on('mouseleave', function () {
+      // Використовуємо метод .on() для включення події
+      swiper2.mousewheel.enable();
+    });
+  });
+
+
+
 });
 
 //header
@@ -272,6 +290,7 @@ var swiper = new Swiper(".swiper-img", {
 
 var swiper = new Swiper(".swiper-skins", {
   spaceBetween: 25,
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -466,25 +485,25 @@ var swiper2 = new Swiper(".slider-card2", {
 
 
 var swiper = new Swiper(".slider-reviews", {
-
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    320:{
+    320: {
       spaceBetween: 30,
       slidesPerView: 1,
       grid: {
         rows: 1,
       },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        dynamicBullets: true,
-      },
+
     },
-    576:{
+    576: {
       spaceBetween: 30,
       slidesPerView: 2,
     },
@@ -493,7 +512,59 @@ var swiper = new Swiper(".slider-reviews", {
       grid: {
         rows: 3,
       },
-      
+
     },
   }
 });
+
+
+// var swiper = new Swiper(".navigation", {
+//   spaceBetween: 10,
+//   slidesPerView: 15,
+//   freeMode: true,
+//   watchSlidesProgress: true,
+//   // thumbs: {
+//   //   swiper: swiper,
+//   // },
+// });
+
+// var swiper2 = new Swiper(".scroll", {
+//   direction: "vertical",
+//   // slidesPerView: 1,
+//   spaceBetween: 30,
+//   mousewheel: true,
+//   thumbs: {
+//     swiper: swiper,
+//   },
+
+// });
+
+
+function enableSwiper() {
+  var screenWidth = window.innerWidth;
+  if (screenWidth >= 991) {
+    var swiper = new Swiper(".navigation", {
+      spaceBetween: 10,
+      slidesPerView: 15,
+      freeMode: true,
+      watchSlidesProgress: true,
+      // thumbs: {
+      //   swiper: swiper,
+      // },
+    });
+
+    var swiper2 = new Swiper(".scroll", {
+      direction: "vertical",
+      // slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      thumbs: {
+        swiper: swiper,
+      },
+
+    });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', enableSwiper);
+window.addEventListener('resize', enableSwiper);
