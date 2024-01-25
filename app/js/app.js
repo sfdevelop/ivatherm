@@ -271,6 +271,7 @@ var swiper = new Swiper(".swiper-products", {
 
     1200: {
       slidesPerView: 4,
+      spaceBetween: 39,
     },
   }
 });

@@ -63,4 +63,14 @@
 
 .select2-results__option--selectable {
   text-align: center;
+  color: #4E4E4E;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: #9b98d3;
+  color: white;
 }

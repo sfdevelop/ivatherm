@@ -478,9 +478,9 @@ body.lock::after {
 }
 
 .container-slider {
-  max-width: 1160px;
+  max-width: 1190px;
   width: 100%;
-  padding: 0px 45px;
+  padding: 0px 60px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -914,6 +914,16 @@ button {
 
 .select2-results__option--selectable {
   text-align: center;
+  color: #4E4E4E;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: #9b98d3;
+  color: white;
 }
 
 .range {
@@ -1449,10 +1459,6 @@ button {
   height: 150px;
 }
 
-.search-menu__right .card .card__inner {
-  position: static;
-}
-
 .search-menu__right .card .card__box {
   padding: 25px 0;
 }
@@ -1558,9 +1564,6 @@ button {
   line-height: 24.5px;
   outline: 0;
   cursor: pointer;
-  -webkit-transition: linear .2s;
-  -o-transition: linear .2s;
-  transition: linear .2s;
 }
 
 .search-menu .close-icon:hover {
@@ -1573,6 +1576,18 @@ button {
 
 .search-menu .search-box:not(:valid) ~ .close-icon {
   display: none;
+}
+
+.search-menu .card .card__img-one {
+  opacity: 1 !important;
+}
+
+.search-menu .card:hover {
+  background-color: transparent;
+}
+
+.search-menu .card:hover .card__img-two {
+  opacity: 0;
 }
 
 .search-menu.open {
@@ -1849,17 +1864,16 @@ button {
 }
 
 .card {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 20px;
   overflow: hidden;
   min-height: 475px;
-}
-
-.card__inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 .card__img {
@@ -1903,6 +1917,9 @@ button {
           align-items: center;
   text-align: center;
   padding: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .card span {
@@ -1950,6 +1967,9 @@ button {
   word-wrap: break-word;
   -webkit-box-orient: vertical;
   box-orient: vertical;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .card__price {
@@ -2419,11 +2439,11 @@ button {
 .swiper-blog::before {
   content: "";
   position: absolute;
-  width: 30px;
+  width: 40px;
   top: 0;
   bottom: 0;
   height: 100%;
-  right: -50px;
+  right: -65px;
   background-color: #F4F3FB;
   z-index: 2;
 }
@@ -2431,11 +2451,11 @@ button {
 .swiper-blog::after {
   content: "";
   position: absolute;
-  width: 30px;
+  width: 40px;
   top: 0;
   bottom: 0;
   height: 100%;
-  left: -50px;
+  left: -65px;
   background-color: #F4F3FB;
   z-index: 2;
 }
@@ -2523,11 +2543,11 @@ button {
 }
 
 .swiper-blog .swiper-button-next {
-  right: -45px;
+  right: -55px;
 }
 
 .swiper-blog .swiper-button-prev {
-  left: -45px;
+  left: -55px;
 }
 
 /*end blog===============*/
@@ -2712,6 +2732,14 @@ button {
   line-height: 24.5px;
 }
 
+.connect input:target {
+  outline: 2px solid #8D89DA !important;
+}
+
+.connect input:focus {
+  outline: 2px solid #8D89DA !important;
+}
+
 .connect .btn {
   margin: 0 auto;
 }
@@ -2787,8 +2815,16 @@ button {
   margin: 0 0 50px 0;
 }
 
+.resalt-search--water .card {
+  min-height: 425px;
+}
+
 .resalt-search--new {
   padding: 90px 0 50px;
+}
+
+.resalt-search--new .card {
+  min-height: 425px;
 }
 
 .resalt-search--new .suptitle {
@@ -3128,8 +3164,14 @@ button {
   width: 100%;
 }
 
+.intro-about .swiper-intro-about {
+  position: relative;
+}
+
 .intro-about .swiper-pagination {
-  margin: 0 0 220px 0;
+  position: absolute;
+  top: auto;
+  bottom: 145px;
 }
 
 .intro-about .swiper-slide {
@@ -3152,7 +3194,7 @@ button {
 
 .intro-about h1 {
   max-width: 500px;
-  margin: 100px 0 25px;
+  margin: 130px 0 25px;
   color: #FFF;
   font-size: 40px;
   font-weight: 500;
@@ -3524,6 +3566,7 @@ button {
 
 .history__item:hover {
   background-color: #E8E7F7;
+  border-color: transparent;
 }
 
 .history__item:last-child {
@@ -3780,6 +3823,7 @@ button {
   -o-transition: linear .2s;
   transition: linear .2s;
   white-space: wrap;
+  white-space: pre-wrap;
   background-color: #8D89DA;
   border-radius: 30px;
 }
@@ -4498,6 +4542,10 @@ button {
   border-bottom: 1px solid #EAEAEA;
 }
 
+.blog-list__inner a {
+  position: relative;
+}
+
 .blog-list__inner li {
   border-radius: 10px;
   overflow: hidden;
@@ -4680,7 +4728,7 @@ button {
 }
 
 .contacts__left {
-  max-width: 340px;
+  max-width: 345px;
   width: 100%;
   margin: 0 30px 0 0;
 }
@@ -5581,6 +5629,26 @@ button {
   outline: none;
 }
 
+.form .basket__group textarea::-webkit-input-placeholder {
+  color: #B6B6B6;
+}
+
+.form .basket__group textarea::-moz-placeholder {
+  color: #B6B6B6;
+}
+
+.form .basket__group textarea:-ms-input-placeholder {
+  color: #B6B6B6;
+}
+
+.form .basket__group textarea::-ms-input-placeholder {
+  color: #B6B6B6;
+}
+
+.form .basket__group textarea::placeholder {
+  color: #B6B6B6;
+}
+
 .form .btn {
   height: 42px;
   width: 100%;
@@ -5971,9 +6039,6 @@ button {
   }
   .card {
     min-height: auto;
-  }
-  .card__inner {
-    position: static;
   }
   .slider-img__inner {
     -webkit-box-orient: vertical;
@@ -6484,6 +6549,10 @@ button {
   .tabbed-content .item.active::before {
     background-image: url("../images/dest/icons/arrow-tab-1.svg");
   }
+  #side_tab4::before,
+  #side_tab5::before {
+    background-image: none !important;
+  }
   .item .item-content {
     padding: 10px 0px 0 0px !important;
   }
@@ -6754,7 +6823,7 @@ button {
     margin: 0 0 5px 0;
   }
   .intro-about .swiper-pagination {
-    margin: 0 0 245px 0;
+    bottom: 85px;
   }
   .history__inner {
     -webkit-box-orient: vertical;
@@ -7054,6 +7123,16 @@ button {
   .test .scroll__item:first-child {
     margin: 0 0 100px 0 !important;
   }
+  .info__img {
+    height: 335px;
+  }
+  .info__img img {
+    height: 110%;
+  }
+  .resalt-search--new .card,
+  .resalt-search--water .card {
+    min-height: auto;
+  }
 }
 
 @media (max-width: 575px) {
@@ -7230,7 +7309,7 @@ button {
     width: auto;
   }
   .card {
-    min-height: auto;
+    min-height: 330px;
   }
   .card h6 {
     font-size: 12px;
@@ -7390,5 +7469,21 @@ button {
     font-size: 14px;
     bottom: 20px;
     left: 20px;
+  }
+  .intro__inner {
+    height: 100dvh;
+  }
+  .swiper-products .swiper-button-next,
+  .swiper-products .swiper-button-prev {
+    display: none;
+  }
+  .slider-arrow-mob .swiper-button-next,
+  .slider-arrow-mob .swiper-button-prev {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .pay li + li {
+    margin: 0 0 0 30px;
   }
 }

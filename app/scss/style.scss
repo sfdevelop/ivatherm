@@ -464,10 +464,6 @@ $breakpoint: 767px;
         height: 150px;
       }
 
-      .card__inner {
-        position: static;
-      }
-
       .card__box {
         padding: 25px 0;
       }
@@ -573,7 +569,6 @@ $breakpoint: 767px;
     line-height: 24.5px;
     outline: 0;
     cursor: pointer;
-    transition: linear .2s;
 
     &:hover {
       color: #8D89DA;
@@ -588,6 +583,19 @@ $breakpoint: 767px;
     display: none;
   }
 
+  .card {
+    .card__img-one {
+      opacity: 1 !important;
+    }
+
+    &:hover {
+      background-color: transparent;
+
+      .card__img-two {
+        opacity: 0;
+      }
+    }
+  }
 }
 
 .search-menu.open {
@@ -842,17 +850,11 @@ $breakpoint: 767px;
 }
 
 .card {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   border-radius: 20px;
   overflow: hidden;
   min-height: 475px;
-
-  &__inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
 
   &__img {
     position: relative;
@@ -886,6 +888,7 @@ $breakpoint: 767px;
     align-items: center;
     text-align: center;
     padding: 20px;
+    flex: 1 1 auto;
   }
 
   span {
@@ -925,6 +928,7 @@ $breakpoint: 767px;
     word-wrap: break-word;
     -webkit-box-orient: vertical;
     box-orient: vertical;
+    flex: 1 1 auto;
   }
 
   &__price {
@@ -1358,11 +1362,11 @@ $breakpoint: 767px;
   &::before {
     content: "";
     position: absolute;
-    width: 30px;
+    width: 40px;
     top: 0;
     bottom: 0;
     height: 100%;
-    right: -50px;
+    right: -65px;
     background-color: #F4F3FB;
     z-index: 2;
   }
@@ -1370,11 +1374,11 @@ $breakpoint: 767px;
   &::after {
     content: "";
     position: absolute;
-    width: 30px;
+    width: 40px;
     top: 0;
     bottom: 0;
     height: 100%;
-    left: -50px;
+    left: -65px;
     background-color: #F4F3FB;
     z-index: 2;
   }
@@ -1449,11 +1453,11 @@ $breakpoint: 767px;
   }
 
   .swiper-button-next {
-    right: -45px;
+    right: -55px;
   }
 
   .swiper-button-prev {
-    left: -45px;
+    left: -55px;
   }
 
 }
@@ -1608,6 +1612,12 @@ $breakpoint: 767px;
       font-weight: 400;
       line-height: 24.5px;
     }
+    &:target{
+      outline: 2px solid #8D89DA !important;
+    }
+    &:focus{
+      outline: 2px solid #8D89DA !important;
+    }
   }
 
   .btn {
@@ -1675,9 +1685,16 @@ $breakpoint: 767px;
     .title {
       margin: 0 0 50px 0;
     }
+
+    .card {
+      min-height: 425px;
+    }
   }
 
   &--new {
+    .card {
+      min-height: 425px;
+    }
     padding: 90px 0 50px;
 
     .suptitle {
@@ -1994,9 +2011,13 @@ $breakpoint: 767px;
   .swiper {
     width: 100%;
   }
-
+  .swiper-intro-about{
+    position: relative;
+  }
   .swiper-pagination {
-    margin: 0 0 220px 0;
+    position: absolute;
+    top: auto;
+    bottom: 145px;
   }
 
   .swiper-slide {
@@ -2019,7 +2040,7 @@ $breakpoint: 767px;
 
   h1 {
     max-width: 500px;
-    margin: 100px 0 25px;
+    margin: 130px 0 25px;
     color: #FFF;
     font-size: 40px;
     font-weight: 500;
@@ -2358,6 +2379,7 @@ $breakpoint: 767px;
 
     &:hover {
       background-color: #E8E7F7;
+      border-color: transparent;
     }
   }
 
@@ -2580,6 +2602,7 @@ $breakpoint: 767px;
       transform: rotate(0);
       transition: linear .2s;
       white-space: wrap;
+      white-space: pre-wrap;
       background-color: #8D89DA;
       border-radius: 30px;
 
@@ -3198,7 +3221,9 @@ $breakpoint: 767px;
       margin: 0 0 0 -30px;
       border-bottom: 1px solid #EAEAEA;
     }
-
+    a{
+      position: relative;
+    }
     li {
       border-radius: 10px;
       overflow: hidden;
@@ -3358,7 +3383,7 @@ $breakpoint: 767px;
   }
 
   &__left {
-    max-width: 340px;
+    max-width: 345px;
     width: 100%;
     margin: 0 30px 0 0;
 
@@ -4185,6 +4210,9 @@ $breakpoint: 767px;
       line-height: 120%;
       outline: none;
     }
+    textarea::placeholder{
+      color: #B6B6B6;
+    }
   }
 
   .btn {
@@ -4349,6 +4377,7 @@ $breakpoint: 767px;
   height: 1100px;
   max-width: 1380px;
   margin: 20px auto 140px;
+
   .swiper {
     width: 100%;
     height: 100%;
@@ -4361,6 +4390,7 @@ $breakpoint: 767px;
   top: 30%;
   left: 20px;
   width: 107px !important;
+
   .swiper-wrapper {
     display: flex;
     flex-direction: column;
@@ -4379,9 +4409,11 @@ $breakpoint: 767px;
     line-height: normal;
     cursor: pointer;
   }
-  .swiper-slide.swiper-slide-thumb-active{
+
+  .swiper-slide.swiper-slide-thumb-active {
     color: #1B1B1B;
-    &::after{
+
+    &::after {
       content: "";
       position: absolute;
       top: 50%;

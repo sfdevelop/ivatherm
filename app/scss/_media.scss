@@ -75,10 +75,6 @@
     min-height: auto;
   }
 
-  .card__inner {
-    position: static;
-  }
-
   .slider-img__inner {
     flex-direction: column-reverse;
   }
@@ -552,7 +548,8 @@
   .scroll__item {
     max-width: 767px;
   }
-  .type-skins--page{
+
+  .type-skins--page {
     border-radius: 30px;
     padding: 45px 0 70px !important;
 
@@ -677,6 +674,8 @@
     font-weight: 500 !important;
   }
 
+
+
   .tabbed-content .item::before {
     background-image: url("../images/dest/icons/arrow-tab.svg");
     background-repeat: no-repeat;
@@ -687,6 +686,12 @@
 
   .tabbed-content .item.active::before {
     background-image: url("../images/dest/icons/arrow-tab-1.svg");
+  }
+
+  #side_tab4::before ,
+  #side_tab5::before {
+
+      background-image: none !important;
   }
 
   .item .item-content {
@@ -1010,7 +1015,7 @@
   }
 
   .intro-about .swiper-pagination {
-    margin: 0 0 245px 0;
+    bottom: 85px;
   }
 
   .history__inner {
@@ -1310,7 +1315,18 @@
     margin: 0 0 100px 0 !important;
   }
 
+  .info__img {
+    height: 335px;
 
+    img {
+      height: 110%;
+    }
+  }
+
+  .resalt-search--new .card,
+  .resalt-search--water .card {
+    min-height: auto;
+  }
 
 
 }
@@ -1509,7 +1525,7 @@
   }
 
   .card {
-    min-height: auto;
+    min-height: 330px;
   }
 
   .card h6 {
@@ -1691,9 +1707,30 @@
   .test .scroll__item {
     padding: 45px 20px 65px;
   }
+
   .scroll__item-num {
     font-size: 14px;
     bottom: 20px;
     left: 20px;
   }
+
+  .intro__inner {
+    height: 100dvh;
+  }
+
+  .swiper-products .swiper-button-next,
+  .swiper-products .swiper-button-prev {
+    display: none;
+  }
+
+  .slider-arrow-mob .swiper-button-next,
+  .slider-arrow-mob .swiper-button-prev {
+    display: flex;
+  }
+
+  .pay li+li {
+    margin: 0 0 0 30px;
+  }
+
+
 }
