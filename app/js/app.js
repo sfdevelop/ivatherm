@@ -47,7 +47,7 @@ $(function () {
 
   $(".resalt-search__filter").on("click", function () {
     $('.category-list').addClass('active');
-    $("body").addClass("lock");
+    // $("body").addClass("lock");
   });
 
   $(".category-list__close").on("click", function () {
@@ -97,7 +97,11 @@ $(function () {
       });
     }
   }
+
   /* end tabs on desktop accordion on mobile*/
+    
+
+
 
   $(".type").select2({
     placeholder: "Сортування",

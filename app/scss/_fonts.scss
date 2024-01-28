@@ -38,3 +38,11 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: 'RFDewi';
+  src: local('SF-Pro-Display-Bold'), local('RFDewi-Regular'),
+    url('../fonts/RFDewi-Regular.woff2') format('woff2'),
+    url('../fonts/RFDewi-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}

@@ -49,7 +49,7 @@
 
 
 @media (max-width: 991px) {
-  .tabs-side .tabs {
+  .tabs-side .tabs__wrap {
     max-width: 340px;
   }
 
@@ -450,7 +450,7 @@
   }
 
   .product .slider-card2 {
-    height: 335px;
+    height: 375px;
   }
 
   .use__list li+li::after {
@@ -555,8 +555,17 @@
 
   }
 
+  .basket__right {
+    position: inherit;
+  }
 
+  .blog-intro {
+    margin: 0 0 50px 0;
+  }
 
+  .product__inner {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 767px) {
@@ -601,7 +610,7 @@
 
     .menu__inner {
       position: relative;
-      height: calc(100vh - 150px);
+      height: calc(100vh - 170px);
       overflow: auto;
     }
 
@@ -667,13 +676,24 @@
     padding: 0;
   }
 
-  .item::before {
+  .item::before,
+  .tabs__wrap ul li a {
+    display: block;
     padding: 15px 0;
     border-bottom: 1px solid #EAEAEA;
     text-transform: uppercase;
     font-weight: 500 !important;
   }
 
+  .tabbed-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tabs-side .tabs__wrap {
+    max-width: 100%;
+    order: 1;
+  }
 
 
   .tabbed-content .item::before {
@@ -688,10 +708,10 @@
     background-image: url("../images/dest/icons/arrow-tab-1.svg");
   }
 
-  #side_tab4::before ,
+  #side_tab4::before,
   #side_tab5::before {
 
-      background-image: none !important;
+    background-image: none !important;
   }
 
   .item .item-content {
@@ -871,7 +891,7 @@
   }
 
   .search-menu {
-    height: calc(100vh - 63px);
+    height: calc(100svh - 63px);
   }
 
   .search-menu__box-inner {
@@ -1125,15 +1145,16 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    transform: translateX(-100vw);
+    transform: translateY(100vh);
     transition: transform .3s;
     overflow: auto;
     background-color: #fff;
     padding: 35px 20px 100px;
+    border-radius: 30px 30px 0px 0px;
   }
 
   .category-list.active {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 
   .category-list__mob {
@@ -1181,10 +1202,6 @@
 
   .contacts__left li img {
     margin: 0 10px 0 0;
-  }
-
-  .product__inner {
-    flex-direction: column;
   }
 
   .option-list li {
@@ -1328,7 +1345,23 @@
     min-height: auto;
   }
 
+  .tabs__wrap {
+    float: none;
+  }
 
+  .search-menu__right .card h6 {
+    margin: 0 0 10px 0;
+  }
+
+  .contacts__right {
+    border-radius: 0;
+  }
+
+  .contacts__right img {
+    width: 110%;
+    height: 110%;
+    object-position: -10px -10px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1732,5 +1765,7 @@
     margin: 0 0 0 30px;
   }
 
-
+  .components li {
+    padding: 0;
+  }
 }
