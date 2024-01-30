@@ -7302,8 +7302,8 @@ button {
   .contacts__right img {
     width: 110%;
     height: 110%;
-    -o-object-position: -10px -10px;
-       object-position: -10px -10px;
+    -o-object-position: -15px -15px;
+       object-position: -15px -15px;
   }
 }
 
