@@ -90,11 +90,12 @@ $(function () {
         var container = $(this).parents('.tabbed-content'),
           currId = $(this).attr('id'),
           items = container.find('.item');
-        container.find('.tabs a').removeClass('active');
-        items.removeClass('active');
-        $(this).addClass('active');
+        // container.find('.tabs a').removeClass('active');
+        // items.removeClass('active');
+        $(this).toggleClass('active');
         container.find('.tabs a[href$="#' + currId + '"]').addClass('active');
       });
+
     }
   }
 
@@ -137,65 +138,7 @@ $(function () {
     postfix: "₴"
   });
 
-  $(".rateYo-one").rateYo({
-    starWidth: "20px",
-    ratedFill: "#FBE173",
-    spacing: "5px",
-    rating: 1,
-    readOnly: true,
-    fullStar: true,
-  });
-  $(".rateYo-two").rateYo({
-    starWidth: "20px",
-    ratedFill: "#FBE173",
-    spacing: "5px",
-    rating: 2,
-    readOnly: true,
-    fullStar: true,
-  });
-  $(".rateYo-three").rateYo({
-    starWidth: "20px",
-    ratedFill: "#FBE173",
-    spacing: "5px",
-    rating: 3,
-    readOnly: true,
-    fullStar: true,
-  });
-
-
-  $(".rateYo-four").rateYo({
-    starWidth: "20px",
-    ratedFill: "#FBE173",
-    spacing: "5px",
-    rating: 4,
-    readOnly: true,
-    fullStar: true,
-    onChange: function (rating, rateYoInstance) {
-
-      $(this).next().text(rating);
-    }
-  });
-
-  $(".rateYo-four-send").rateYo({
-    starWidth: "20px",
-    ratedFill: "#FBE173",
-    spacing: "5px",
-    rating: 4,
-    fullStar: true,
-    onChange: function (rating, rateYoInstance) {
-
-      $(this).next().text(rating);
-    }
-  });
-
-  $(".rateYo-five").rateYo({
-    starWidth: "20px",
-    ratedFill: "#FBE173",
-    spacing: "5px",
-    rating: 5,
-    readOnly: true,
-    fullStar: true,
-  });
+  // 
 
 
   $(document).ready(function () {

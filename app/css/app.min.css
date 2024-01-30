@@ -2503,11 +2503,25 @@ button {
   z-index: 2;
 }
 
+.swiper-blog .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
 .swiper-blog .swiper-slide {
   position: relative;
   border-radius: 10px;
   background: #FFF;
   overflow: hidden;
+  height: auto;
 }
 
 .swiper-blog__sticker {
@@ -3101,11 +3115,11 @@ button {
 /*end steps===============*/
 /*start components===============*/
 .components {
-  padding: 20px 0 110px;
+  padding: 15px 0 110px;
 }
 
 .components__top {
-  margin: 0 0 35px 0;
+  margin: 0 0 40px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3118,7 +3132,7 @@ button {
 }
 
 .components__top p {
-  margin: 0 0 30px 0;
+  margin: 20px 0 20px 0;
   max-width: 420px;
   color: #4E4E4E;
   font-size: 14px;
@@ -3144,7 +3158,7 @@ button {
 }
 
 .components__img {
-  margin: 0 0 30px 0;
+  margin: 0 0 38px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3491,8 +3505,11 @@ button {
   background-color: transparent;
   height: 1px;
   border-bottom: 1px solid rgba(141, 137, 218, 0.1);
-  width: 100%;
+  width: 131%;
   top: -27px;
+  -webkit-transform: translateX(-24%);
+      -ms-transform: translateX(-24%);
+          transform: translateX(-24%);
 }
 
 .progres-slider .swiper-container-wrapper--timeline .swiper-pagination-progressbar-fill {
@@ -3512,8 +3529,15 @@ button {
   line-height: 1.66;
   bottom: 0;
   z-index: 11;
-  width: 100%;
+  width: 131%;
   display: flex;
+  -webkit-transform: translateX(-24%);
+      -ms-transform: translateX(-24%);
+          transform: translateX(-24%);
+}
+
+.progres-slider .swiper-container-wrapper--timeline .swiper-pagination-custom1 .first {
+  background-color: #fff;
 }
 
 .progres-slider .swiper-container-wrapper--timeline .swiper-pagination-custom1 .swiper-pagination-switch1 {
@@ -5413,6 +5437,20 @@ button {
 }
 
 /*end components==========*/
+.rateYo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rateYo img {
+  width: 18px;
+  height: 18px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 5px 0 0;
+}
+
 /*start reviews==============*/
 .reviews {
   padding: 140px 0 70px;
@@ -5463,8 +5501,13 @@ button {
   line-height: normal;
 }
 
-.reviews__top .rateYo-four {
-  zoom: 2;
+.reviews__top .rateYo {
+  margin: 0 0 0 20px;
+}
+
+.reviews__top .rateYo img {
+  width: 29px;
+  height: 29px;
 }
 
 .reviews p {
@@ -5632,7 +5675,7 @@ button {
   width: 100%;
 }
 
-.slider-reviews__right .rateYo-four {
+.slider-reviews__right .rateYo {
   margin: 0 0 20px 0;
 }
 

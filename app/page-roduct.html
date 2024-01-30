@@ -11,7 +11,6 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
 
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
@@ -52,15 +51,19 @@
         <div class="container">
           <div class="menu__inner">
             <article class="tabbed-content tabs-side">
-              <nav class="tabs">
-                <ul>
-                  <li><a href="#side_tab1" class="active">Обличчя</a></li>
-                  <li><a href="#side_tab2">Тіло</a></li>
-                  <li><a href="#side_tab3">Типи шкіри</a></li>
-                  <li><a href="#side_tab4">Термальна вода Herculane</a></li>
-                  <li><a href="#side_tab5">Про нас</a></li>
+              <div class="tabs__wrap">
+                <nav class="tabs">
+                  <ul>
+                    <li><a href="#side_tab1" class="active">Обличчя</a></li>
+                    <li><a href="#side_tab2">Тіло</a></li>
+                    <li><a href="#side_tab3">Типи шкіри</a></li>
+                  </ul>
+                </nav>
+                <ul class="tabs__links">
+                  <li><a href="#" target="_blank">Термальна вода Herculane</a></li>
+                  <li><a href="#" target="_blank">Про нас</a></li>
                 </ul>
-              </nav>
+              </div>
               <section id="side_tab1" class="item active" data-title="Обличчя">
                 <div class="item-content">
                   <ul>
@@ -187,59 +190,67 @@
                 <div class="item-content">
                   <ul>
                     <li>
-                      <img src="images/dest/content/skin-1.jpg" alt="icon"> Oily
+                      <a href="#">
+                        <img src="images/dest/content/skin-1.jpg" alt="icon"> Oily
+                      </a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-2.jpg" alt="icon"> Combination
+                      <a href="#">
+                        <img src="images/dest/content/skin-2.jpg" alt="icon"> Combination</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-3.jpg" alt="icon"> Acne Prone
+                      <a href="#">
+                        <img src="images/dest/content/skin-3.jpg" alt="icon"> Acne Prone</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-4.jpg" alt="icon"> Hyper-Sensitive
+                      <a href="#">
+                        <img src="images/dest/content/skin-4.jpg" alt="icon"> Hyper-Sensitive</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-5.jpg" alt="icon"> Atopic
+                      <a href="#">
+                        <img src="images/dest/content/skin-5.jpg" alt="icon"> Atopic</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-6.jpg" alt="icon"> Dehydrated
+                      <a href="#">
+                        <img src="images/dest/content/skin-6.jpg" alt="icon"> Dehydrated</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-7.jpg" alt="icon"> Mature
+                      <a href="#">
+                        <img src="images/dest/content/skin-7.jpg" alt="icon"> Mature</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-8.jpg" alt="icon"> Hyperpigmentation
+                      <a href="#">
+                        <img src="images/dest/content/skin-8.jpg" alt="icon"> Hyperpigmentation</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-9.jpg" alt="icon"> Rosacea
+                      <a href="#">
+                        <img src="images/dest/content/skin-9.jpg" alt="icon"> Rosacea</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-10.jpg" alt="icon"> Redness and Squams
+                      <a href="#">
+                        <img src="images/dest/content/skin-10.jpg" alt="icon"> Redness and Squams</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-11.jpg" alt="icon"> Damaged skin
+                      <a href="#">
+                        <img src="images/dest/content/skin-11.jpg" alt="icon"> Damaged skin</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-12.jpg" alt="icon"> Stretch Marks
+                      <a href="#">
+                        <img src="images/dest/content/skin-12.jpg" alt="icon"> Stretch Marks</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-13.jpg" alt="icon"> Cellulite
+                      <a href="#">
+                        <img src="images/dest/content/skin-13.jpg" alt="icon"> Cellulite</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-14.jpg" alt="icon"> Normal
+                      <a href="#">
+                        <img src="images/dest/content/skin-14.jpg" alt="icon"> Normal</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-15.jpg" alt="icon"> Dry
+                      <a href="#">
+                        <img src="images/dest/content/skin-15.jpg" alt="icon"> Dry</a>
                     </li>
                   </ul>
-                </div>
-              </section>
-              <section id="side_tab4" class="item" data-title="Термальна вода Herculane">
-                <div class="item-content">
-                </div>
-              </section>
-              <section id="side_tab5" class="item" data-title="Про нас">
-                <div class="item-content">
                 </div>
               </section>
             </article>
@@ -295,57 +306,57 @@
                   </ul>
                 </div>
                 <div class="search-menu__right">
-                  <div class="card">
-                      <div class="card__img">
-                        <img class="card__img-one" src="images/dest/content/product-1.jpg" alt="product">
-                        <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
+                  <a href="#" class="card">
+                    <div class="card__img">
+                      <img class="card__img-one" src="images/dest/content/product-1.jpg" alt="product">
+                      <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
+                    </div>
+                    <div class="card__box">
+                      <h6>
+                        Засіб для відновлення шкіри «CICADERM» з екстрактом мімози, 40 мл
+                      </h6>
+                      <div class="card__price">
+                        <div class="card__price-actual">560,00₴</div>
                       </div>
-                      <div class="card__box">
-                        <h6>
-                          Засіб для відновлення шкіри «CICADERM» з екстрактом мімози, 40 мл
-                        </h6>
-                        <div class="card__price">
-                          <div class="card__price-actual">560,00₴</div>
-                        </div>
-                        <button class="btn btn--transparent">
-                          Купити
-                        </button>
+                      <button class="btn btn--transparent">
+                        Купити
+                      </button>
+                    </div>
+                  </a>
+                  <a href="#" class="card">
+                    <div class="card__img">
+                      <img class="card__img-one" src="images/dest/content/product-1.jpg" alt="product">
+                      <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
+                    </div>
+                    <div class="card__box">
+                      <h6>
+                        Засіб для відновлення шкіри «CICADERM» з екстрактом мімози, 40 мл
+                      </h6>
+                      <div class="card__price">
+                        <div class="card__price-actual">560,00₴</div>
                       </div>
-                  </div>
-                  <div class="card">
-                      <div class="card__img">
-                        <img class="card__img-one" src="images/dest/content/product-1.jpg" alt="product">
-                        <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
+                      <button class="btn btn--transparent">
+                        Купити
+                      </button>
+                    </div>
+                  </a>
+                  <a href="#" class="card">
+                    <div class="card__img">
+                      <img class="card__img-one" src="images/dest/content/product-1.jpg" alt="product">
+                      <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
+                    </div>
+                    <div class="card__box">
+                      <h6>
+                        Засіб для відновлення шкіри «CICADERM» з екстрактом мімози, 40 мл
+                      </h6>
+                      <div class="card__price">
+                        <div class="card__price-actual">560,00₴</div>
                       </div>
-                      <div class="card__box">
-                        <h6>
-                          Засіб для відновлення шкіри «CICADERM» з екстрактом мімози, 40 мл
-                        </h6>
-                        <div class="card__price">
-                          <div class="card__price-actual">560,00₴</div>
-                        </div>
-                        <button class="btn btn--transparent">
-                          Купити
-                        </button>
-                      </div>
-                  </div>
-                  <div class="card">
-                      <div class="card__img">
-                        <img class="card__img-one" src="images/dest/content/product-1.jpg" alt="product">
-                        <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
-                      </div>
-                      <div class="card__box">
-                        <h6>
-                          Засіб для відновлення шкіри «CICADERM» з екстрактом мімози, 40 мл
-                        </h6>
-                        <div class="card__price">
-                          <div class="card__price-actual">560,00₴</div>
-                        </div>
-                        <button class="btn btn--transparent">
-                          Купити
-                        </button>
-                      </div>
-                  </div>
+                      <button class="btn btn--transparent">
+                        Купити
+                      </button>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -362,6 +373,7 @@
             </div>
           </div>
         </div>
+
       </div>
 
       <div class="breadcrumbs">
@@ -444,7 +456,13 @@
                 AQUAFIL HYDRA Cleansing Foam
               </h5>
               <div class="product__rate-wrap">
-                <div class="rateYo-four"></div>
+                <div class="rateYo">
+                  <img src="images/src/icons/star-fill.svg" alt="start">
+                  <img src="images/src/icons/star-fill.svg" alt="start">
+                  <img src="images/src/icons/star-fill.svg" alt="start">
+                  <img src="images/src/icons/star-fill.svg" alt="start">
+                  <img src="images/src/icons/star-light.svg" alt="start">
+                </div>
                 <a href="#"><span>100</span>+ відгуків</a>
               </div>
               <div class="product__price">
@@ -699,22 +717,40 @@
           <div class="reviews__inner">
             <div class="reviews__left">
               <div class="reviews__top">
-                <div class="rateYo-four"></div>
-                <div class="counter">4</div>
+                <div class="rateYo">
+                  <img src="images/src/icons/star-fill.svg" alt="start">
+                  <img src="images/src/icons/star-fill.svg" alt="start">
+                  <img src="images/src/icons/star-fill.svg" alt="start">
+                  <img src="images/src/icons/star-fill.svg" alt="start">
+                  <img src="images/src/icons/star-light.svg" alt="start">
+                </div>
+                <div class="counter">4,0</div>
               </div>
               <p>
                 Наші клієнти поділилися своїми враженнями та досвідом використання AQUAFIL HYDRA Cleansing Foam.
               </p>
               <div class="reviews__left-box">
                 <div class="reviews__left-item">
-                  <div class="rateYo-five"></div>
+                  <div class="rateYo">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-light.svg" alt="start">
+                  </div>
                   <div class="reviews__line">
                     <span></span>
                   </div>
                   70%
                 </div>
                 <div class="reviews__left-item">
-                  <div class="rateYo-four"></div>
+                  <div class="rateYo">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-light.svg" alt="start">
+                  </div>
                   <div class="reviews__line">
                     <span></span>
                   </div>
@@ -722,21 +758,39 @@
                 </div>
 
                 <div class="reviews__left-item">
-                  <div class="rateYo-three"></div>
+                  <div class="rateYo">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-light.svg" alt="start">
+                  </div>
                   <div class="reviews__line">
                     <span></span>
                   </div>
                   70%
                 </div>
                 <div class="reviews__left-item">
-                  <div class="rateYo-two"></div>
+                  <div class="rateYo">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-light.svg" alt="start">
+                  </div>
                   <div class="reviews__line">
                     <span></span>
                   </div>
                   70%
                 </div>
                 <div class="reviews__left-item">
-                  <div class="rateYo-one"></div>
+                  <div class="rateYo">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-light.svg" alt="start">
+                  </div>
                   <div class="reviews__line">
                     <span></span>
                   </div>
@@ -750,7 +804,13 @@
 
               <div class="reviews__send">
                 Залишіть оцінку
-                <div class="rateYo-four-send"></div>
+                <div class="rateYo">
+                  <img src="images/src/icons/star-fill.svg" alt="start">
+                  <img src="images/src/icons/star-fill.svg" alt="start">
+                  <img src="images/src/icons/star-fill.svg" alt="start">
+                  <img src="images/src/icons/star-fill.svg" alt="start">
+                  <img src="images/src/icons/star-light.svg" alt="start">
+                </div>
                 <div class="counter">4</div>
               </div>
 
@@ -783,7 +843,13 @@
                         </span>
                       </div>
                       <div class="slider-reviews__right">
-                        <div class="rateYo-four"></div>
+                        <div class="rateYo">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-light.svg" alt="start">
+                        </div>
                         <strong>Ці продукти — це справжнє диво! </strong>
                         <p>
                           Їхні природні складники відразу ж сподобалися моїй шкірі — не лише вона виглядає набагато
@@ -810,7 +876,13 @@
                         </span>
                       </div>
                       <div class="slider-reviews__right">
-                        <div class="rateYo-four"></div>
+                        <div class="rateYo">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-light.svg" alt="start">
+                        </div>
                         <strong>Ці продукти — це справжнє диво! </strong>
                         <p>
                           Їхні природні складники відразу ж сподобалися моїй шкірі — не лише вона виглядає набагато
@@ -837,7 +909,13 @@
                         </span>
                       </div>
                       <div class="slider-reviews__right">
-                        <div class="rateYo-four"></div>
+                        <div class="rateYo">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-light.svg" alt="start">
+                        </div>
                         <strong>Ці продукти — це справжнє диво! </strong>
                         <p>
                           Їхні природні складники відразу ж сподобалися моїй шкірі — не лише вона виглядає набагато
@@ -864,7 +942,13 @@
                         </span>
                       </div>
                       <div class="slider-reviews__right">
-                        <div class="rateYo-four"></div>
+                        <div class="rateYo">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-light.svg" alt="start">
+                        </div>
                         <strong>Ці продукти — це справжнє диво! </strong>
                         <p>
                           Їхні природні складники відразу ж сподобалися моїй шкірі — не лише вона виглядає набагато
@@ -891,7 +975,13 @@
                         </span>
                       </div>
                       <div class="slider-reviews__right">
-                        <div class="rateYo-four"></div>
+                        <div class="rateYo">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-light.svg" alt="start">
+                        </div>
                         <strong>Ці продукти — це справжнє диво! </strong>
                         <p>
                           Їхні природні складники відразу ж сподобалися моїй шкірі — не лише вона виглядає набагато
@@ -918,7 +1008,13 @@
                         </span>
                       </div>
                       <div class="slider-reviews__right">
-                        <div class="rateYo-four"></div>
+                        <div class="rateYo">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-light.svg" alt="start">
+                        </div>
                         <strong>Ці продукти — це справжнє диво! </strong>
                         <p>
                           Їхні природні складники відразу ж сподобалися моїй шкірі — не лише вона виглядає набагато
@@ -945,7 +1041,13 @@
                         </span>
                       </div>
                       <div class="slider-reviews__right">
-                        <div class="rateYo-four"></div>
+                        <div class="rateYo">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-light.svg" alt="start">
+                        </div>
                         <strong>Ці продукти — це справжнє диво! </strong>
                         <p>
                           Їхні природні складники відразу ж сподобалися моїй шкірі — не лише вона виглядає набагато
@@ -972,7 +1074,13 @@
                         </span>
                       </div>
                       <div class="slider-reviews__right">
-                        <div class="rateYo-four"></div>
+                        <div class="rateYo">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-light.svg" alt="start">
+                        </div>
                         <strong>Ці продукти — це справжнє диво! </strong>
                         <p>
                           Їхні природні складники відразу ж сподобалися моїй шкірі — не лише вона виглядає набагато
@@ -999,7 +1107,13 @@
                         </span>
                       </div>
                       <div class="slider-reviews__right">
-                        <div class="rateYo-four"></div>
+                        <div class="rateYo">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-fill.svg" alt="start">
+                          <img src="images/src/icons/star-light.svg" alt="start">
+                        </div>
                         <strong>Ці продукти — це справжнє диво! </strong>
                         <p>
                           Їхні природні складники відразу ж сподобалися моїй шкірі — не лише вона виглядає набагато
@@ -1039,7 +1153,13 @@
                 </h6>
                 <div class="reviews__send">
                   Залишіть оцінку
-                  <div class="rateYo-four-send"></div>
+                  <div class="rateYo">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-fill.svg" alt="start">
+                    <img src="images/src/icons/star-light.svg" alt="start">
+                  </div>
                   <div class="counter">4</div>
                 </div>
                 <form class="form">
@@ -1414,8 +1534,6 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"
     integrity="sha512-kZsqvmw94Y8hyhwtWZJvDtobwQ9pLhF1DuIvcqSuracbRn6WJs1Ih+04fpH/8d1CFKysp7XA1tR0Aa2jKLTQUg=="
