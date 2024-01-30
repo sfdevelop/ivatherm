@@ -934,20 +934,20 @@ $breakpoint: 767px;
     font-size: 16px;
     font-weight: 300;
     line-height: normal;
-    -ms-text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    -ms-line-clamp: 3;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    display: -webkit-box;
-    display: box;
-    word-wrap: break-word;
-    -webkit-box-orient: vertical;
-    box-orient: vertical;
+    // -ms-text-overflow: ellipsis;
+    // -o-text-overflow: ellipsis;
+    // text-overflow: ellipsis;
+    // overflow: hidden;
+    // -ms-line-clamp: 3;
+    // -webkit-line-clamp: 3;
+    // line-clamp: 3;
+    // display: -webkit-box;
+    // display: box;
+    // word-wrap: break-word;
+    // -webkit-box-orient: vertical;
+    // box-orient: vertical;
     flex: 1 1 auto;
-    max-height: 55px;
+    // max-height: 55px;
   }
 
   &__price {
@@ -972,7 +972,9 @@ $breakpoint: 767px;
     font-weight: 500;
     line-height: normal;
   }
-
+  &__btn-wrap{
+    height: 28px;
+  }
   .btn {
     display: none;
   }

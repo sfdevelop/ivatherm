@@ -1996,22 +1996,9 @@ button {
   font-size: 16px;
   font-weight: 300;
   line-height: normal;
-  -ms-text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  -ms-line-clamp: 3;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
-  display: -webkit-box;
-  display: box;
-  word-wrap: break-word;
-  -webkit-box-orient: vertical;
-  box-orient: vertical;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  max-height: 55px;
 }
 
 .card__price {
@@ -2042,6 +2029,10 @@ button {
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
+}
+
+.card__btn-wrap {
+  height: 28px;
 }
 
 .card .btn {
