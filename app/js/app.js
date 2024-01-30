@@ -141,21 +141,7 @@ $(function () {
   // 
 
 
-  $(document).ready(function () {
 
-    // Або можна використовувати клас для вибору елементу за класом
-    var scrollContainer = $('.scroll__item-inner');
-
-    scrollContainer.on('mouseenter', function () {
-      // Використовуємо метод .off() для вимкнення події
-      swiper2.mousewheel.disable();
-    });
-
-    scrollContainer.on('mouseleave', function () {
-      // Використовуємо метод .on() для включення події
-      swiper2.mousewheel.enable();
-    });
-  });
 
 
 
@@ -466,26 +452,6 @@ var swiper = new Swiper(".slider-reviews", {
 });
 
 
-// var swiper = new Swiper(".navigation", {
-//   spaceBetween: 10,
-//   slidesPerView: 15,
-//   freeMode: true,
-//   watchSlidesProgress: true,
-//   // thumbs: {
-//   //   swiper: swiper,
-//   // },
-// });
-
-// var swiper2 = new Swiper(".scroll", {
-//   direction: "vertical",
-//   // slidesPerView: 1,
-//   spaceBetween: 30,
-//   mousewheel: true,
-//   thumbs: {
-//     swiper: swiper,
-//   },
-
-// });
 
 
 function enableSwiper() {
@@ -496,14 +462,12 @@ function enableSwiper() {
       slidesPerView: 15,
       freeMode: true,
       watchSlidesProgress: true,
-      // thumbs: {
-      //   swiper: swiper,
-      // },
+
     });
 
-    var swiper2 = new Swiper(".scroll", {
+    var swiper = new Swiper(".scroll", {
       direction: "vertical",
-      // slidesPerView: 1,
+      slidesPerView: 1,
       spaceBetween: 30,
       mousewheel: true,
       thumbs: {
@@ -513,6 +477,34 @@ function enableSwiper() {
     });
   }
 }
-
 document.addEventListener('DOMContentLoaded', enableSwiper);
 window.addEventListener('resize', enableSwiper);
+
+
+/*start scroll swiper===========*/ 
+var scrollContainer = document.getElementById('scrollContainer');
+
+scrollContainer.addEventListener('mouseenter', function() {
+  swiper.mousewheel.disable();
+});
+
+scrollContainer.addEventListener('mouseenter', function() {
+  swiper.mousewheel.enable();
+});
+
+// $(document).ready(function () {
+
+//   // Або можна використовувати клас для вибору елементу за класом
+//   var scrollContainer = $('.scroll__item-inner');
+
+//   scrollContainer.on('mouseenter', function () {
+//     // Використовуємо метод .off() для вимкнення події
+//     swiper.mousewheel.disable();
+//   });
+
+//   scrollContainer.on('mouseleave', function () {
+//     // Використовуємо метод .on() для включення події
+//     swiper.mousewheel.enable();
+//   });
+// });
+/*end scroll swiper===========*/ 
