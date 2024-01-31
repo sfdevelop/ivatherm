@@ -100,7 +100,7 @@ $(function () {
   }
 
   /* end tabs on desktop accordion on mobile*/
-    
+
 
 
 
@@ -137,12 +137,6 @@ $(function () {
     from: 100,
     postfix: "₴"
   });
-
-  // 
-
-
-
-
 
 
 });
@@ -451,60 +445,31 @@ var swiper = new Swiper(".slider-reviews", {
   }
 });
 
-
-
-
-function enableSwiper() {
-  var screenWidth = window.innerWidth;
-  if (screenWidth >= 991) {
-    var swiper = new Swiper(".navigation", {
-      spaceBetween: 10,
-      slidesPerView: 15,
-      freeMode: true,
-      watchSlidesProgress: true,
-
-    });
-
-    var swiper = new Swiper(".scroll", {
-      direction: "vertical",
-      slidesPerView: 1,
+var swiper = new Swiper(".slider-modal", {
+  // slidesPerView: 5,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
       spaceBetween: 30,
-      mousewheel: true,
-      thumbs: {
-        swiper: swiper,
-      },
+      slidesPerView: 2,
+    },
 
-    });
+    800: {
+      spaceBetween: 30,
+      slidesPerView: 3,
+    },
+
+    1050: {
+      slidesPerView: 5,
+      spaceBetween: 30,
+    },
   }
-}
-document.addEventListener('DOMContentLoaded', enableSwiper);
-window.addEventListener('resize', enableSwiper);
 
-
-/*start scroll swiper===========*/ 
-var scrollContainer = document.getElementById('scrollContainer');
-
-scrollContainer.addEventListener('mouseenter', function() {
-  swiper.mousewheel.disable();
 });
-
-scrollContainer.addEventListener('mouseenter', function() {
-  swiper.mousewheel.enable();
-});
-
-// $(document).ready(function () {
-
-//   // Або можна використовувати клас для вибору елементу за класом
-//   var scrollContainer = $('.scroll__item-inner');
-
-//   scrollContainer.on('mouseenter', function () {
-//     // Використовуємо метод .off() для вимкнення події
-//     swiper.mousewheel.disable();
-//   });
-
-//   scrollContainer.on('mouseleave', function () {
-//     // Використовуємо метод .on() для включення події
-//     swiper.mousewheel.enable();
-//   });
-// });
-/*end scroll swiper===========*/ 
