@@ -888,7 +888,7 @@ button {
 
 .select .select2-container .select2-selection--single .select2-selection__rendered {
   padding-left: 25px;
-  padding-right: 40px;
+  padding-right: 43px;
   line-height: 40px;
   color: #8D89DA;
 }
@@ -911,12 +911,19 @@ button {
   color: #8D89DA;
 }
 
+.select2-results__option {
+  padding: 7px 8px;
+}
+
 .select2-dropdown {
   top: 6px;
   border-radius: 8px !important;
-  border: 1px solid #8D89DA;
   background-color: #fff !important;
   overflow: hidden !important;
+}
+
+.select2-dropdown.select2-dropdown--below {
+  border: 1px solid #8D89DA;
 }
 
 .select2-container--default .select2-results__option--selected {
@@ -935,6 +942,12 @@ button {
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
   background-color: #9b98d3;
   color: white;
+}
+
+.select .select2-container.select2-container--open .select2-selection__arrow {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+      -ms-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
 }
 
 .range {
@@ -1302,13 +1315,13 @@ button {
     width: 100%;
   }
   .item.active .item-content {
-    padding: 40px 20px 40px 50px;
+    padding: 40px 0 40px 50px;
   }
   .tabs-side .tabs__wrap {
     padding: 40px 0 45px;
     background-color: #F4F3FB;
     height: 100%;
-    max-width: 405px;
+    max-width: 445px;
     width: 100%;
   }
   .tabs-side .tabs__wrap li {
@@ -1316,12 +1329,27 @@ button {
   }
 }
 
+.tabbed-content #side_tab3 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tabbed-content #side_tab3 ul li {
+  width: 145px;
+}
+
 .tabbed-content .tabs {
   display: none;
 }
 
 .tabbed-content li {
-  margin: 0 0 13px 0;
+  margin: 0 0 17px 0;
 }
 
 .tabbed-content li,
@@ -1891,6 +1919,23 @@ button {
   overflow: visible;
 }
 
+.swiper-products .swiper-blog .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.swiper-products .swiper-slide {
+  height: auto;
+}
+
 .swiper-products .swiper-button-next,
 .swiper-products .swiper-button-prev {
   top: 220px;
@@ -1914,7 +1959,7 @@ button {
           flex-direction: column;
   border-radius: 20px;
   overflow: hidden;
-  min-height: 475px;
+  min-height: auto !important;
 }
 
 .card__img {
@@ -2608,67 +2653,6 @@ button {
   margin: 0 0 50px 0;
 }
 
-.gallery__text {
-  padding: 0 0 35px 0;
-  position: relative;
-}
-
-.gallery__text::before {
-  content: "";
-  position: absolute;
-  bottom: 70px;
-  left: 0;
-  right: 0;
-  height: 50%;
-  z-index: 1;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(38%, white), color-stop(98%, rgba(255, 255, 255, 0)));
-  background: -o-linear-gradient(bottom, white 38%, rgba(255, 255, 255, 0) 98%);
-  background: linear-gradient(0deg, white 38%, rgba(255, 255, 255, 0) 98%);
-}
-
-.gallery__text ::-webkit-scrollbar {
-  display: block;
-  width: 1px;
-}
-
-.gallery__text ::-webkit-scrollbar-thumb {
-  background-color: #8D89DA;
-  border-radius: 5px;
-}
-
-.gallery__text ::-webkit-scrollbar-track {
-  background-color: #EAEAEA;
-  border-radius: 5px;
-  max-height: 80px;
-  background-clip: content-box;
-  margin-top: 5px !important;
-  margin-bottom: 30px !important;
-}
-
-.gallery__text p {
-  padding: 0 60px 0 0;
-  position: relative;
-  color: #6D6D6D;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 23px;
-  height: 120px;
-  overflow-y: auto;
-}
-
-.gallery__text.open::before {
-  display: none;
-}
-
-.gallery__text.open p {
-  padding: 0;
-  height: auto;
-}
-
-.gallery__text.open .gallery__btn {
-  display: none;
-}
-
 .gallery__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2683,6 +2667,73 @@ button {
   line-height: normal;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+.text-show {
+  padding: 0 0 40px 0;
+}
+
+.text-show ::-webkit-scrollbar {
+  display: block;
+  width: 2px;
+}
+
+.text-show ::-webkit-scrollbar-thumb {
+  background-color: #8D89DA;
+  border-radius: 5px;
+}
+
+.text-show ::-webkit-scrollbar-track {
+  background-color: #EAEAEA;
+  border-radius: 5px;
+  max-height: 80px;
+  background-clip: content-box;
+  margin-top: 5px !important;
+  margin-bottom: 30px !important;
+}
+
+.text-show .gallery__text {
+  pointer-events: none;
+  padding: 0 60px 0 0;
+  position: relative;
+  height: 140px;
+  overflow-y: scroll;
+}
+
+.text-show .gallery__text::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  z-index: 1;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(38%, white), color-stop(98%, rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(bottom, white 38%, rgba(255, 255, 255, 0) 98%);
+  background: linear-gradient(0deg, white 38%, rgba(255, 255, 255, 0) 98%);
+}
+
+.text-show .gallery__text p {
+  position: relative;
+  color: #6D6D6D;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.text-show .container.open .gallery__text::before {
+  display: none;
+}
+
+.text-show .container.open .gallery__text {
+  padding: 0;
+  height: auto;
+  pointer-events: inherit;
+  overflow-y: inherit;
+}
+
+.text-show .container.open .gallery__btn {
+  display: none;
 }
 
 .swiper-gallery {
@@ -2833,7 +2884,7 @@ button {
 }
 
 .resalt-search__top {
-  margin: 0 0 20px 0;
+  margin: 0 0 45px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2938,6 +2989,18 @@ button {
 .card-list .card {
   margin: 0 0 28px 28px;
   width: calc(25% - 28px);
+}
+
+.card-list--filter .card__box {
+  padding: 20px 11px;
+}
+
+.card-list--filter .card h6 {
+  font-size: 14px;
+}
+
+.card-list--filter .card__price-actual {
+  color: #1B1B1B;
 }
 
 /*end resalt__search================*/
@@ -3268,6 +3331,42 @@ button {
 
 .intro-about .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #fff;
+}
+
+.intro-about--water h1 {
+  margin: 95px 0 25px;
+}
+
+.intro-about--water p {
+  max-width: 400px;
+}
+
+.intro-about--water .swiper-slide {
+  height: 665px;
+}
+
+.intro-about--skin h1 {
+  margin: 145px 0 25px;
+}
+
+.intro-about--skin p {
+  max-width: 400px;
+}
+
+.intro-about--skin .swiper-slide {
+  height: 665px;
+}
+
+.intro-about--about h1 {
+  margin: 95px 0 25px;
+}
+
+.intro-about--about p {
+  max-width: 500px;
+}
+
+.intro-about--about .swiper-slide {
+  height: 665px;
 }
 
 /*end intro-about=============*/
@@ -6156,6 +6255,16 @@ button {
     margin: 0 0 20px 20px;
     background-color: #F4F3FB;
   }
+  .tabbed-content #side_tab3 ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0 0 0 -15px;
+  }
+  .tabbed-content #side_tab3 li {
+    margin: 0 0 15px 15px;
+    width: calc(50% - 15px) !important;
+  }
 }
 
 @media (max-width: 991px) {
@@ -6980,7 +7089,7 @@ button {
     height: 616px;
   }
   .components--water {
-    padding: 25px 0 40px;
+    padding: 47px 0 40px;
     margin: -65px 0 0 0;
     border-radius: 30px 30px 0 0;
   }
@@ -7268,15 +7377,6 @@ button {
   .search-menu__right .card h6 {
     margin: 0 0 10px 0;
   }
-  .contacts__right {
-    border-radius: 0;
-  }
-  .contacts__right img {
-    width: 110%;
-    height: 110%;
-    -o-object-position: -15px -15px;
-       object-position: -15px -15px;
-  }
   .type-skins__list li {
     width: calc(25% - 20px);
   }
@@ -7326,6 +7426,27 @@ button {
   .slider-modal .swiper-button-next,
   .slider-modal .swiper-button-prev {
     top: -40px;
+  }
+  .card-list--category .card__box {
+    padding: 25px 15px 25px;
+  }
+  .card-list--category .card__price-actual {
+    font-size: 12px;
+  }
+  .card__btn-wrap {
+    width: 100%;
+  }
+  .box .resalt-search__top-box {
+    margin: 0 0 18px 0;
+  }
+  .card-list.card-list--filter .card__box {
+    padding: 3px 10px 20px !important;
+  }
+  .card-list.card-list--filter .card h6 {
+    font-size: 12px;
+  }
+  .category-list__inner {
+    width: 100%;
   }
 }
 
@@ -7665,5 +7786,8 @@ button {
   .type-skins__img {
     width: 115px;
     height: 115px;
+  }
+  .quality__slider .quality-slider1 .swiper-slide:nth-child(1) {
+    border: none;
   }
 }

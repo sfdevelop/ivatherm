@@ -27,6 +27,19 @@
     margin: 0 0 20px 20px;
     background-color: #F4F3FB;
   }
+
+  .tabbed-content #side_tab3 {
+    ul {
+      justify-content: flex-start;
+      margin: 0 0 0 -15px;
+    }
+
+    li {
+      margin: 0 0 15px 15px;
+      width: calc(50% - 15px) !important;
+
+    }
+  }
 }
 
 
@@ -1002,7 +1015,7 @@
   }
 
   .components--water {
-    padding: 25px 0 40px;
+    padding: 47px 0 40px;
     margin: -65px 0 0 0;
     border-radius: 30px 30px 0 0;
 
@@ -1298,16 +1311,6 @@
     margin: 0 0 10px 0;
   }
 
-  .contacts__right {
-    border-radius: 0;
-  }
-
-  .contacts__right img {
-    width: 110%;
-    height: 110%;
-    object-position: -15px -15px;
-  }
-
   .type-skins__list li {
     width: calc(25% - 20px);
   }
@@ -1366,6 +1369,38 @@
   .slider-modal .swiper-button-next,
   .slider-modal .swiper-button-prev {
     top: -40px;
+  }
+
+  .card-list--category {
+    .card__box {
+      padding: 25px 15px 25px;
+    }
+
+    .card__price-actual {
+      font-size: 12px;
+    }
+  }
+
+  .card__btn-wrap {
+    width: 100%;
+  }
+
+  .box .resalt-search__top-box {
+    margin: 0 0 18px 0;
+  }
+
+  .card-list.card-list--filter {
+    .card__box {
+      padding: 3px 10px 20px !important;
+    }
+
+    .card h6 {
+      font-size: 12px;
+    }
+  }
+
+  .category-list__inner {
+    width: 100%;
   }
 
 }
@@ -1752,5 +1787,10 @@
     width: 115px;
     height: 115px;
   }
+
+  .quality__slider .quality-slider1 .swiper-slide:nth-child(1) {
+    border: none;
+  }
+
 
 }

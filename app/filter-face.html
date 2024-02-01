@@ -82,15 +82,19 @@
         <div class="container">
           <div class="menu__inner">
             <article class="tabbed-content tabs-side">
-              <nav class="tabs">
-                <ul>
-                  <li><a href="#side_tab1" class="active">Обличчя</a></li>
-                  <li><a href="#side_tab2">Тіло</a></li>
-                  <li><a href="#side_tab3">Типи шкіри</a></li>
-                  <li><a href="#side_tab4">Термальна вода Herculane</a></li>
-                  <li><a href="#side_tab5">Про нас</a></li>
+              <div class="tabs__wrap">
+                <nav class="tabs">
+                  <ul>
+                    <li><a href="#side_tab1" class="active">Обличчя</a></li>
+                    <li><a href="#side_tab2">Тіло</a></li>
+                    <li><a href="#side_tab3">Типи шкіри</a></li>
+                  </ul>
+                </nav>
+                <ul class="tabs__links">
+                  <li><a href="#" target="_blank">Термальна вода Herculane</a></li>
+                  <li><a href="#" target="_blank">Про нас</a></li>
                 </ul>
-              </nav>
+              </div>
               <section id="side_tab1" class="item active" data-title="Обличчя">
                 <div class="item-content">
                   <ul>
@@ -217,59 +221,67 @@
                 <div class="item-content">
                   <ul>
                     <li>
-                      <img src="images/dest/content/skin-1.jpg" alt="icon"> Oily
+                      <a href="#">
+                        <img src="images/dest/content/skin-1.jpg" alt="icon"> Oily
+                      </a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-2.jpg" alt="icon"> Combination
+                      <a href="#">
+                        <img src="images/dest/content/skin-2.jpg" alt="icon"> Combination</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-3.jpg" alt="icon"> Acne Prone
+                      <a href="#">
+                        <img src="images/dest/content/skin-3.jpg" alt="icon"> Acne Prone</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-4.jpg" alt="icon"> Hyper-Sensitive
+                      <a href="#">
+                        <img src="images/dest/content/skin-4.jpg" alt="icon"> Hyper-Sensitive</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-5.jpg" alt="icon"> Atopic
+                      <a href="#">
+                        <img src="images/dest/content/skin-5.jpg" alt="icon"> Atopic</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-6.jpg" alt="icon"> Dehydrated
+                      <a href="#">
+                        <img src="images/dest/content/skin-6.jpg" alt="icon"> Dehydrated</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-7.jpg" alt="icon"> Mature
+                      <a href="#">
+                        <img src="images/dest/content/skin-7.jpg" alt="icon"> Mature</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-8.jpg" alt="icon"> Hyperpigmentation
+                      <a href="#">
+                        <img src="images/dest/content/skin-8.jpg" alt="icon"> Hyperpigmentation</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-9.jpg" alt="icon"> Rosacea
+                      <a href="#">
+                        <img src="images/dest/content/skin-9.jpg" alt="icon"> Rosacea</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-10.jpg" alt="icon"> Redness and Squams
+                      <a href="#">
+                        <img src="images/dest/content/skin-10.jpg" alt="icon"> Redness and Squams</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-11.jpg" alt="icon"> Damaged skin
+                      <a href="#">
+                        <img src="images/dest/content/skin-11.jpg" alt="icon"> Damaged skin</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-12.jpg" alt="icon"> Stretch Marks
+                      <a href="#">
+                        <img src="images/dest/content/skin-12.jpg" alt="icon"> Stretch Marks</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-13.jpg" alt="icon"> Cellulite
+                      <a href="#">
+                        <img src="images/dest/content/skin-13.jpg" alt="icon"> Cellulite</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-14.jpg" alt="icon"> Normal
+                      <a href="#">
+                        <img src="images/dest/content/skin-14.jpg" alt="icon"> Normal</a>
                     </li>
                     <li>
-                      <img src="images/dest/content/skin-15.jpg" alt="icon"> Dry
+                      <a href="#">
+                        <img src="images/dest/content/skin-15.jpg" alt="icon"> Dry</a>
                     </li>
                   </ul>
-                </div>
-              </section>
-              <section id="side_tab4" class="item" data-title="Термальна вода Herculane">
-                <div class="item-content">
-                </div>
-              </section>
-              <section id="side_tab5" class="item" data-title="Про нас">
-                <div class="item-content">
                 </div>
               </section>
             </article>
@@ -285,7 +297,6 @@
           </div>
         </div>
       </div>
-
       <div class="search-menu">
         <div class="search-menu__scroll">
           <div class="search-menu__top">
@@ -325,57 +336,63 @@
                   </ul>
                 </div>
                 <div class="search-menu__right">
-                  <div class="card">
-                      <div class="card__img">
-                        <img class="card__img-one" src="images/dest/content/product-1.jpg" alt="product">
-                        <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
+                  <a href="#" class="card">
+                    <div class="card__img">
+                      <img class="card__img-one" src="images/dest/content/product-1.jpg" alt="product">
+                      <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
+                    </div>
+                    <div class="card__box">
+                      <h6>
+                        Засіб для відновлення шкіри «CICADERM» з екстрактом мімози, 40 мл
+                      </h6>
+                      <div class="card__price">
+                        <div class="card__price-actual">560,00₴</div>
                       </div>
-                      <div class="card__box">
-                        <h6>
-                          Засіб для відновлення шкіри «CICADERM» з екстрактом мімози, 40 мл
-                        </h6>
-                        <div class="card__price">
-                          <div class="card__price-actual">560,00₴</div>
-                        </div>
+                      <div class="card__btn-wrap">
                         <button class="btn btn--transparent">
                           Купити
                         </button>
                       </div>
-                  </div>
-                  <div class="card">
-                      <div class="card__img">
-                        <img class="card__img-one" src="images/dest/content/product-1.jpg" alt="product">
-                        <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
+                    </div>
+                  </a>
+                  <a href="#" class="card">
+                    <div class="card__img">
+                      <img class="card__img-one" src="images/dest/content/product-1.jpg" alt="product">
+                      <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
+                    </div>
+                    <div class="card__box">
+                      <h6>
+                        Засіб для відновлення шкіри «CICADERM» з екстрактом мімози, 40 мл
+                      </h6>
+                      <div class="card__price">
+                        <div class="card__price-actual">560,00₴</div>
                       </div>
-                      <div class="card__box">
-                        <h6>
-                          Засіб для відновлення шкіри «CICADERM» з екстрактом мімози, 40 мл
-                        </h6>
-                        <div class="card__price">
-                          <div class="card__price-actual">560,00₴</div>
-                        </div>
+                      <div class="card__btn-wrap">
                         <button class="btn btn--transparent">
                           Купити
                         </button>
                       </div>
-                  </div>
-                  <div class="card">
-                      <div class="card__img">
-                        <img class="card__img-one" src="images/dest/content/product-1.jpg" alt="product">
-                        <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
+                    </div>
+                  </a>
+                  <a href="#" class="card">
+                    <div class="card__img">
+                      <img class="card__img-one" src="images/dest/content/product-1.jpg" alt="product">
+                      <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
+                    </div>
+                    <div class="card__box">
+                      <h6>
+                        Засіб для відновлення шкіри «CICADERM» з екстрактом мімози, 40 мл
+                      </h6>
+                      <div class="card__price">
+                        <div class="card__price-actual">560,00₴</div>
                       </div>
-                      <div class="card__box">
-                        <h6>
-                          Засіб для відновлення шкіри «CICADERM» з екстрактом мімози, 40 мл
-                        </h6>
-                        <div class="card__price">
-                          <div class="card__price-actual">560,00₴</div>
-                        </div>
+                      <div class="card__btn-wrap">
                         <button class="btn btn--transparent">
                           Купити
                         </button>
                       </div>
-                  </div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -633,7 +650,26 @@
                 </div>
               </div>
 
-              <div class="card-list">
+              <div class="card-list card-list--filter">
+                <div class="card">
+                  <div class="card__img">
+                    <img class="card__img-one" src="images/dest/content/product-2.jpg" alt="product">
+                    <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
+                  </div>
+                  <div class="card__box">
+                    <h6>
+                      Заспокійливий гель для очищення Ivadermaseb
+                    </h6>
+                    <div class="card__price">
+                      <div class="card__price-actual">560,00₴</div>
+                    </div>
+                    <div class="card__btn-wrap">
+                      <button class="btn btn--transparent">
+                        Купити
+                      </button>
+                    </div>
+                  </div>
+                </div>
                 <div class="card">
                     <div class="card__img">
                       <img class="card__img-one" src="images/dest/content/product-1.jpg" alt="product">
@@ -641,15 +677,55 @@
                     </div>
                     <div class="card__box">
                       <h6>
-                        Крем для чутливої шкіри з ознаками почервоніння та лущення Ivadermaseb
+                        Заспокійливий гель для очищення Ivadermaseb
                       </h6>
                       <div class="card__price">
                         <div class="card__price-actual">560,00₴</div>
                       </div>
+                      <div class="card__btn-wrap">
+                        <button class="btn btn--transparent">
+                          Купити
+                        </button>
+                      </div>
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                    <img class="card__img-one" src="images/dest/content/product-3.jpg" alt="product">
+                    <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
+                  </div>
+                  <div class="card__box">
+                    <h6>
+                      Крем для чутливої шкіри з ознаками почервоніння та лущення Ivadermaseb 
+                    </h6>
+                    <div class="card__price">
+                      <div class="card__price-actual">560,00₴</div>
+                    </div>
+                    <div class="card__btn-wrap">
                       <button class="btn btn--transparent">
                         Купити
                       </button>
                     </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                    <img class="card__img-one" src="images/dest/content/product-1.jpg" alt="product">
+                    <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
+                  </div>
+                  <div class="card__box">
+                    <h6>
+                      Заспокійливий гель для очищення Ivadermaseb
+                    </h6>
+                    <div class="card__price">
+                      <div class="card__price-actual">448,00₴</div>
+                    </div>
+                    <div class="card__btn-wrap">
+                      <button class="btn btn--transparent">
+                        Купити
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <div class="card">
                   <div class="card__img">
@@ -663,43 +739,11 @@
                     <div class="card__price">
                       <div class="card__price-actual">560,00₴</div>
                     </div>
-                    <button class="btn btn--transparent">
-                      Купити
-                    </button>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card__img">
-                    <img class="card__img-one" src="images/dest/content/product-3.jpg" alt="product">
-                    <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
-                  </div>
-                  <div class="card__box">
-                    <h6>
-                      Крем для чутливої шкіри з ознаками почервоніння та лущення Ivadermaseb
-                    </h6>
-                    <div class="card__price">
-                      <div class="card__price-actual">560,00₴</div>
+                    <div class="card__btn-wrap">
+                      <button class="btn btn--transparent">
+                        Купити
+                      </button>
                     </div>
-                    <button class="btn btn--transparent">
-                      Купити
-                    </button>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card__img">
-                    <img class="card__img-one" src="images/dest/content/product-1.jpg" alt="product">
-                    <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
-                  </div>
-                  <div class="card__box">
-                    <h6>
-                      Крем для проблемної шкіри з серйозними недоліками та акне «IVAPUR AI», 30 мл
-                    </h6>
-                    <div class="card__price">
-                      <div class="card__price-actual">448,00₴</div>
-                    </div>
-                    <button class="btn btn--transparent">
-                      Купити
-                    </button>
                   </div>
                 </div>
                 <div class="card">
@@ -709,15 +753,55 @@
                     </div>
                     <div class="card__box">
                       <h6>
-                        Крем для чутливої шкіри з ознаками почервоніння та лущення Ivadermaseb
+                        Заспокійливий гель для очищення Ivadermaseb
                       </h6>
                       <div class="card__price">
                         <div class="card__price-actual">560,00₴</div>
                       </div>
+                      <div class="card__btn-wrap">
+                        <button class="btn btn--transparent">
+                          Купити
+                        </button>
+                      </div>
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                    <img class="card__img-one" src="images/dest/content/product-3.jpg" alt="product">
+                    <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
+                  </div>
+                  <div class="card__box">
+                    <h6>
+                      Крем для чутливої шкіри з ознаками почервоніння та лущення Ivadermaseb 
+                    </h6>
+                    <div class="card__price">
+                      <div class="card__price-actual">560,00₴</div>
+                    </div>
+                    <div class="card__btn-wrap">
                       <button class="btn btn--transparent">
                         Купити
                       </button>
                     </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                    <img class="card__img-one" src="images/dest/content/product-1.jpg" alt="product">
+                    <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
+                  </div>
+                  <div class="card__box">
+                    <h6>
+                      Заспокійливий гель для очищення Ivadermaseb
+                    </h6>
+                    <div class="card__price">
+                      <div class="card__price-actual">448,00₴</div>
+                    </div>
+                    <div class="card__btn-wrap">
+                      <button class="btn btn--transparent">
+                        Купити
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <div class="card">
                   <div class="card__img">
@@ -731,43 +815,11 @@
                     <div class="card__price">
                       <div class="card__price-actual">560,00₴</div>
                     </div>
-                    <button class="btn btn--transparent">
-                      Купити
-                    </button>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card__img">
-                    <img class="card__img-one" src="images/dest/content/product-3.jpg" alt="product">
-                    <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
-                  </div>
-                  <div class="card__box">
-                    <h6>
-                      Крем для чутливої шкіри з ознаками почервоніння та лущення Ivadermaseb
-                    </h6>
-                    <div class="card__price">
-                      <div class="card__price-actual">560,00₴</div>
+                    <div class="card__btn-wrap">
+                      <button class="btn btn--transparent">
+                        Купити
+                      </button>
                     </div>
-                    <button class="btn btn--transparent">
-                      Купити
-                    </button>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card__img">
-                    <img class="card__img-one" src="images/dest/content/product-1.jpg" alt="product">
-                    <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
-                  </div>
-                  <div class="card__box">
-                    <h6>
-                      Крем для проблемної шкіри з серйозними недоліками та акне «IVAPUR AI», 30 мл
-                    </h6>
-                    <div class="card__price">
-                      <div class="card__price-actual">448,00₴</div>
-                    </div>
-                    <button class="btn btn--transparent">
-                      Купити
-                    </button>
                   </div>
                 </div>
                 <div class="card">
@@ -777,15 +829,55 @@
                     </div>
                     <div class="card__box">
                       <h6>
-                        Крем для чутливої шкіри з ознаками почервоніння та лущення Ivadermaseb
+                        Заспокійливий гель для очищення Ivadermaseb
                       </h6>
                       <div class="card__price">
                         <div class="card__price-actual">560,00₴</div>
                       </div>
+                      <div class="card__btn-wrap">
+                        <button class="btn btn--transparent">
+                          Купити
+                        </button>
+                      </div>
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                    <img class="card__img-one" src="images/dest/content/product-3.jpg" alt="product">
+                    <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
+                  </div>
+                  <div class="card__box">
+                    <h6>
+                      Крем для чутливої шкіри з ознаками почервоніння та лущення Ivadermaseb 
+                    </h6>
+                    <div class="card__price">
+                      <div class="card__price-actual">560,00₴</div>
+                    </div>
+                    <div class="card__btn-wrap">
                       <button class="btn btn--transparent">
                         Купити
                       </button>
                     </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                    <img class="card__img-one" src="images/dest/content/product-1.jpg" alt="product">
+                    <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
+                  </div>
+                  <div class="card__box">
+                    <h6>
+                      Заспокійливий гель для очищення Ivadermaseb
+                    </h6>
+                    <div class="card__price">
+                      <div class="card__price-actual">448,00₴</div>
+                    </div>
+                    <div class="card__btn-wrap">
+                      <button class="btn btn--transparent">
+                        Купити
+                      </button>
+                    </div>
+                  </div>
                 </div>
                 <div class="card">
                   <div class="card__img">
@@ -799,43 +891,11 @@
                     <div class="card__price">
                       <div class="card__price-actual">560,00₴</div>
                     </div>
-                    <button class="btn btn--transparent">
-                      Купити
-                    </button>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card__img">
-                    <img class="card__img-one" src="images/dest/content/product-3.jpg" alt="product">
-                    <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
-                  </div>
-                  <div class="card__box">
-                    <h6>
-                      Крем для чутливої шкіри з ознаками почервоніння та лущення Ivadermaseb
-                    </h6>
-                    <div class="card__price">
-                      <div class="card__price-actual">560,00₴</div>
+                    <div class="card__btn-wrap">
+                      <button class="btn btn--transparent">
+                        Купити
+                      </button>
                     </div>
-                    <button class="btn btn--transparent">
-                      Купити
-                    </button>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card__img">
-                    <img class="card__img-one" src="images/dest/content/product-1.jpg" alt="product">
-                    <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
-                  </div>
-                  <div class="card__box">
-                    <h6>
-                      Крем для проблемної шкіри з серйозними недоліками та акне «IVAPUR AI», 30 мл
-                    </h6>
-                    <div class="card__price">
-                      <div class="card__price-actual">448,00₴</div>
-                    </div>
-                    <button class="btn btn--transparent">
-                      Купити
-                    </button>
                   </div>
                 </div>
                 <div class="card">
@@ -845,32 +905,17 @@
                     </div>
                     <div class="card__box">
                       <h6>
-                        Крем для чутливої шкіри з ознаками почервоніння та лущення Ivadermaseb
+                        Заспокійливий гель для очищення Ivadermaseb
                       </h6>
                       <div class="card__price">
                         <div class="card__price-actual">560,00₴</div>
                       </div>
-                      <button class="btn btn--transparent">
-                        Купити
-                      </button>
+                      <div class="card__btn-wrap">
+                        <button class="btn btn--transparent">
+                          Купити
+                        </button>
+                      </div>
                     </div>
-                </div>
-                <div class="card">
-                  <div class="card__img">
-                    <img class="card__img-one" src="images/dest/content/product-2.jpg" alt="product">
-                    <img class="card__img-two" src="images/dest/content/productPsevdo-1.jpg" alt="product">
-                  </div>
-                  <div class="card__box">
-                    <h6>
-                      Заспокійливий гель для очищення Ivadermaseb
-                    </h6>
-                    <div class="card__price">
-                      <div class="card__price-actual">560,00₴</div>
-                    </div>
-                    <button class="btn btn--transparent">
-                      Купити
-                    </button>
-                  </div>
                 </div>
                 <div class="card">
                   <div class="card__img">
@@ -879,14 +924,16 @@
                   </div>
                   <div class="card__box">
                     <h6>
-                      Крем для чутливої шкіри з ознаками почервоніння та лущення Ivadermaseb
+                      Крем для чутливої шкіри з ознаками почервоніння та лущення Ivadermaseb 
                     </h6>
                     <div class="card__price">
                       <div class="card__price-actual">560,00₴</div>
                     </div>
-                    <button class="btn btn--transparent">
-                      Купити
-                    </button>
+                    <div class="card__btn-wrap">
+                      <button class="btn btn--transparent">
+                        Купити
+                      </button>
+                    </div>
                   </div>
                 </div>
                 <div class="card">
@@ -896,14 +943,16 @@
                   </div>
                   <div class="card__box">
                     <h6>
-                      Крем для проблемної шкіри з серйозними недоліками та акне «IVAPUR AI», 30 мл
+                      Заспокійливий гель для очищення Ivadermaseb
                     </h6>
                     <div class="card__price">
                       <div class="card__price-actual">448,00₴</div>
                     </div>
-                    <button class="btn btn--transparent">
-                      Купити
-                    </button>
+                    <div class="card__btn-wrap">
+                      <button class="btn btn--transparent">
+                        Купити
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1015,42 +1064,60 @@
         </div>
       </section>
 
-      <div class="container">
-        <div class="gallery__text">
-          <p>
-            Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні. Lorem Ipsum є стандартною
-            "рибою" для текстів на латиниці з початку XVI ст. На той час якийсь безіменний друкар створив велику
-            колекцію
-            розмірів і форм шрифтів, використовуючи Lorem Ipsum для друку зразків. Lorem Ipsum не лише успішно пережив
-            без
-            помітних змін п'ять століть, а й переступив до електронного дизайну. Його популяризації в новий час
-            послужили
-            публікація листів Letraset із зразками Lorem Ipsum у 60-х роках і, у нещодавні часи, програми електронної
-            верстки типу Aldus PageMaker, у шаблонах яких використовується Lorem Ipsum. Lorem Ipsum - це текст-"риба",
-            що
-            часто використовується в пресі та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на латиниці з
-            початку XVI ст. На той час якийсь безіменний друкар створив велику колекцію розмірів і форм шрифтів,
-            використовуючи Lorem Ipsum для друку зразків. Lorem Ipsum не лише успішно пережив без помітних змін п'ять
-            століть, а й переступив до електронного дизайну. Його популяризації в новий час послужили публікація листів
-            Letraset із зразками Lorem Ipsum у 60-х роках і, у нещодавні часи, програми електронної верстки типу Aldus
-            PageMaker, у шаблонах яких використовується Lorem Ipsum.
-            Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні. Lorem Ipsum є стандартною
-            "рибою" для текстів на латиниці з початку XVI ст. На той час якийсь безіменний друкар створив велику
-            колекцію
-            розмірів і форм шрифтів, використовуючи Lorem Ipsum для друку зразків. Lorem Ipsum не лише успішно пережив
-            без
-            помітних змін п'ять століть, а й переступив до електронного дизайну. Його популяризації в новий час
-            послужили
-            публікація листів Letraset із зразками Lorem Ipsum у 60-х роках і, у нещодавні часи, програми електронної
-            верстки типу Aldus PageMaker, у шаблонах яких використовується Lorem Ipsum. Lorem Ipsum - це текст-"риба",
-            що
-            часто використовується в пресі та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на латиниці з
-            початку XVI ст. На той час якийсь безіменний друкар створив велику колекцію розмірів і форм шрифтів,
-            використовуючи Lorem Ipsum для друку зразків. Lorem Ipsum не лише успішно пережив без помітних змін п'ять
-            століть, а й переступив до електронного дизайну. Його популяризації в новий час послужили публікація листів
-            Letraset із зразками Lorem Ipsum у 60-х роках і, у нещодавні часи, програми електронної верстки типу Aldus
-            PageMaker, у шаблонах яких використовується Lorem Ipsum.
-          </p>
+      <div class="text-show">
+        <div class="container">
+          <div class="gallery__text">
+            <p>
+              Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні. Lorem Ipsum є
+              стандартною
+              "рибою" для текстів на латиниці з початку XVI ст. На той час якийсь безіменний друкар створив велику
+              колекцію
+              розмірів і форм шрифтів, використовуючи Lorem Ipsum для друку зразків. Lorem Ipsum не лише успішно
+              пережив
+              без
+              помітних змін п'ять століть, а й переступив до електронного дизайну. Його популяризації в новий час
+              послужили
+              публікація листів Letraset із зразками Lorem Ipsum у 60-х роках і, у нещодавні часи, програми
+              електронної
+              верстки типу Aldus PageMaker, у шаблонах яких використовується Lorem Ipsum. Lorem Ipsum - це
+              текст-"риба",
+              що
+              часто використовується в пресі та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на латиниці
+              з
+              початку XVI ст. На той час якийсь безіменний друкар створив велику колекцію розмірів і форм шрифтів,
+              використовуючи Lorem Ipsum для друку зразків. Lorem Ipsum не лише успішно пережив без помітних змін
+              п'ять
+              століть, а й переступив до електронного дизайну. Його популяризації в новий час послужили публікація
+              листів
+              Letraset із зразками Lorem Ipsum у 60-х роках і, у нещодавні часи, програми електронної верстки типу
+              Aldus
+              PageMaker, у шаблонах яких використовується Lorem Ipsum.
+              Lorem Ipsum - це текст-"риба", що часто використовується в пресі та веб-дизайні. Lorem Ipsum є
+              стандартною
+              "рибою" для текстів на латиниці з початку XVI ст. На той час якийсь безіменний друкар створив велику
+              колекцію
+              розмірів і форм шрифтів, використовуючи Lorem Ipsum для друку зразків. Lorem Ipsum не лише успішно
+              пережив
+              без
+              помітних змін п'ять століть, а й переступив до електронного дизайну. Його популяризації в новий час
+              послужили
+              публікація листів Letraset із зразками Lorem Ipsum у 60-х роках і, у нещодавні часи, програми
+              електронної
+              верстки типу Aldus PageMaker, у шаблонах яких використовується Lorem Ipsum. Lorem Ipsum - це
+              текст-"риба",
+              що
+              часто використовується в пресі та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на латиниці
+              з
+              початку XVI ст. На той час якийсь безіменний друкар створив велику колекцію розмірів і форм шрифтів,
+              використовуючи Lorem Ipsum для друку зразків. Lorem Ipsum не лише успішно пережив без помітних змін
+              п'ять
+              століть, а й переступив до електронного дизайну. Його популяризації в новий час послужили публікація
+              листів
+              Letraset із зразками Lorem Ipsum у 60-х роках і, у нещодавні часи, програми електронної верстки типу
+              Aldus
+              PageMaker, у шаблонах яких використовується Lorem Ipsum.
+            </p>
+          </div>
           <button class="gallery__btn">
             Детальніше
           </button>

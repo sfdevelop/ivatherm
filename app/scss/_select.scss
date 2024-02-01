@@ -28,7 +28,7 @@
 
   .select2-container .select2-selection--single .select2-selection__rendered {
     padding-left: 25px;
-    padding-right: 40px;
+    padding-right: 43px;
     line-height: 40px;
     color: #8D89DA;
   }
@@ -47,19 +47,25 @@
   .select2-container--default .select2-selection--single .select2-selection__arrow b {
     border: none;
   }
-  .select2-container--default .select2-selection--single .select2-selection__placeholder{
+
+  .select2-container--default .select2-selection--single .select2-selection__placeholder {
     color: #8D89DA;
   }
+}
+
+.select2-results__option {
+  padding: 7px 8px;
 }
 
 .select2-dropdown {
   top: 6px;
   border-radius: 8px !important;
-  border: 1px solid #8D89DA;
   background-color: #fff !important;
   overflow: hidden !important;
 }
-
+.select2-dropdown.select2-dropdown--below{
+  border: 1px solid #8D89DA;
+}
 .select2-container--default .select2-results__option--selected {
   background-color: #E8E7F7;
 }
@@ -76,4 +82,10 @@
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
   background-color: #9b98d3;
   color: white;
+}
+
+.select .select2-container.select2-container--open{
+  .select2-selection__arrow{
+    transform: translateY(-50%) rotate(180deg);
+  }
 }

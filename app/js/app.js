@@ -226,7 +226,6 @@ var swiper = new Swiper(".swiper-skins", {
   breakpoints: {
     320: {
       slidesPerView: 2.5,
-      loop: true,
       spaceBetween: 10,
     },
     576: {
@@ -448,9 +447,7 @@ var swiper = new Swiper(".slider-reviews", {
 var swiper = new Swiper(".slider-modal", {
   // slidesPerView: 5,
   spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-  },
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
