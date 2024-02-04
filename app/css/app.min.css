@@ -6794,6 +6794,7 @@ button {
             align-items: center;
     width: calc(100% + 40px);
     height: 45px;
+    color: #000;
   }
   .menu .btn-search.header__search img {
     margin: 0 10px 0 0;
@@ -7798,7 +7799,7 @@ button {
     max-width: 375px;
   }
   .intro__inner {
-    height: 100dvh;
+    height: 100vh;
   }
   .swiper-products .swiper-button-next,
   .swiper-products .swiper-button-prev {
