@@ -138,6 +138,12 @@ $(function () {
     postfix: "₴"
   });
 
+  $('[data-fancybox]').fancybox({
+    afterShow: function(instance, current) {
+        // Прокрутка модального вікна вгору
+        instance.$refs.container.scrollTop = 0;
+    }
+  });
 
 });
 
