@@ -140,10 +140,14 @@ $(function () {
 
   $('[data-fancybox]').fancybox({
     afterShow: function(instance, current) {
-        // Прокрутка модального вікна вгору
-        instance.$refs.container.scrollTop = 0;
+        if (current.$trigger.hasClass('modal')) {
+            var swiper = new Swiper('.swiper', {
+                // Налаштування Swiper
+            });
+        }
     }
-  });
+});
+
 
 });
 
