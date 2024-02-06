@@ -348,7 +348,7 @@ var swiper = new Swiper(".swiper-gallery", {
 
 
 var swiper = new Swiper(".quality-slider1", {
-  loop: true,
+  // loop: true,
   spaceBetween: 10,
   slidesPerView: 5,
   freeMode: true,
@@ -357,7 +357,7 @@ var swiper = new Swiper(".quality-slider1", {
 });
 var swiper2 = new Swiper(".quality-slider2", {
   effect: "fade",
-  loop: true,
+  // loop: true,
   spaceBetween: 10,
   navigation: {
     nextEl: ".swiper-button-next",
