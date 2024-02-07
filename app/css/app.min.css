@@ -2050,7 +2050,7 @@ button {
 .card h6 {
   margin: 0 0 15px 0;
   color: #1B1B1B;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: normal;
   -webkit-box-flex: 1;
@@ -4045,14 +4045,6 @@ button {
 
 .box .card-list {
   border-bottom: 1px solid #EAEAEA;
-}
-
-.box .card__img {
-  height: 200px;
-}
-
-.box .card {
-  min-height: 375px;
 }
 
 .category-list {
@@ -6860,6 +6852,12 @@ button {
   .modal {
     padding: 60px 50px 35px;
   }
+  .card h6 {
+    font-size: 14px;
+  }
+  .card__price-actual {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -7054,12 +7052,6 @@ button {
     width: 73px;
     font-size: 9px;
     line-height: 11px;
-  }
-  .card {
-    min-height: 435px;
-  }
-  .card__img {
-    height: 241px;
   }
   .recomendation__top {
     margin: 0 0 15px 0;
@@ -7799,15 +7791,6 @@ button {
   }
   .resalt-search--page .resalt-search__top-box {
     width: auto;
-  }
-  .card {
-    min-height: 330px;
-  }
-  .card h6 {
-    font-size: 12px;
-  }
-  .card__img {
-    height: 145px;
   }
   .steps__item-box h6 {
     font-size: 20px;

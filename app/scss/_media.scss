@@ -567,6 +567,14 @@
   .modal {
     padding: 60px 50px 35px;
   }
+
+  .card h6 {
+    font-size: 14px;
+  }
+
+  .card__price-actual {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -790,14 +798,6 @@
     width: 73px;
     font-size: 9px;
     line-height: 11px;
-  }
-
-  .card {
-    min-height: 435px;
-  }
-
-  .card__img {
-    height: 241px;
   }
 
   .recomendation__top {
@@ -1211,16 +1211,19 @@
   .option-list li {
     margin: 0 0 20px -10px;
     width: calc(100% - 10px);
-    img{
+
+    img {
       width: 30px;
       height: 30px;
       object-fit: contain;
       flex-shrink: 0;
     }
   }
+
   .option-list ul {
     padding: 23px 36px 5px;
   }
+
   .use__list {
     flex-direction: column;
   }
@@ -1618,19 +1621,6 @@
       width: auto;
     }
   }
-
-  .card {
-    min-height: 330px;
-  }
-
-  .card h6 {
-    font-size: 12px;
-  }
-
-  .card__img {
-    height: 145px;
-  }
-
   .steps__item-box h6 {
     font-size: 20px;
   }
