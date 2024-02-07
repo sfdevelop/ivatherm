@@ -3008,7 +3008,7 @@ button {
 
 .card-list .card {
   margin: 0 0 28px 28px;
-  width: calc(25% - 28px);
+  width: calc(33.33333% - 28px);
 }
 
 /*end resalt__search================*/
