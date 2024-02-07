@@ -47,12 +47,12 @@ $(function () {
 
   $(".resalt-search__filter").on("click", function () {
     $('.category-list').addClass('active');
-    // $("body").addClass("lock");
+    $("body").addClass("lock2");
   });
 
   $(".category-list__close").on("click", function () {
     $('.category-list').removeClass('active');
-    $("body").removeClass("lock");
+    $("body").removeClass("lock2");
   });
 
   $(".slider-reviews__more").on("click", function () {
