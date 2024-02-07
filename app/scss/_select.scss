@@ -31,6 +31,7 @@
     padding-right: 43px;
     line-height: 40px;
     color: #8D89DA;
+    font-weight: 400 !important;
   }
 
   .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -50,7 +51,7 @@
 
   .select2-container--default .select2-selection--single .select2-selection__placeholder {
     color: #8D89DA;
-    font-weight: 400;
+    font-weight: 400 !important;
   }
 }
 
@@ -78,7 +79,7 @@
   color: #4E4E4E;
   font-size: 12px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 !important;
   line-height: 19px;
 }
 
