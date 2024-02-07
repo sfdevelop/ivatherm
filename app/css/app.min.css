@@ -6858,10 +6858,16 @@ button {
     padding: 60px 50px 35px;
   }
   .card h6 {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .card__img {
+    height: 174px;
   }
   .card__price-actual {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .card__box {
+    padding: 15px 5px;
   }
 }
 
@@ -7064,15 +7070,8 @@ button {
   .card span {
     margin: 0 auto 10px;
   }
-  .card h6 {
-    margin: 0 0 12px 0;
-    font-size: 15px;
-  }
   .card .btn {
     width: 100%;
-  }
-  .card__price-actual {
-    font-size: 15px;
   }
   .recomendation {
     padding: 40px 0 25px;
@@ -7596,20 +7595,11 @@ button {
   .card-list--category .card__box {
     padding: 25px 15px 25px;
   }
-  .card-list--category .card__price-actual {
-    font-size: 12px;
-  }
   .card__btn-wrap {
     width: 100%;
   }
   .box .resalt-search__top-box {
     margin: 0 0 18px 0;
-  }
-  .card-list.card-list--filter .card__box {
-    padding: 3px 10px 20px !important;
-  }
-  .card-list.card-list--filter .card h6 {
-    font-size: 12px;
   }
   .category-list__inner {
     width: 100%;
