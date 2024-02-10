@@ -488,6 +488,34 @@ body.lock2 {
   margin: 0 auto;
 }
 
+.swiper-products {
+  position: relative;
+}
+
+.swiper-products::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: -65px;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.swiper-products::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  right: -65px;
+  background-color: #fff;
+  z-index: 2;
+}
+
 .container-slider {
   max-width: 1190px;
   width: 100%;
