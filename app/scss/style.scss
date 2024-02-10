@@ -1804,10 +1804,12 @@ $breakpoint: 767px;
 
   .card {
     margin: 0 0 28px 28px;
-    width: calc(33.33333% - 28px);
+    width: calc(25% - 28px);
   }
 }
-
+.box .card-list .card {
+  width: calc(33.33333% - 28px);
+}
 /*end resalt__search================*/
 
 /*start intro-category===============*/

@@ -3036,6 +3036,10 @@ button {
 
 .card-list .card {
   margin: 0 0 28px 28px;
+  width: calc(25% - 28px);
+}
+
+.box .card-list .card {
   width: calc(33.33333% - 28px);
 }
 
@@ -7639,6 +7643,9 @@ button {
   }
   #modal-16 h1 {
     font-size: 28px;
+  }
+  .box .card-list .card {
+    width: calc(50% - 28px);
   }
 }
 
